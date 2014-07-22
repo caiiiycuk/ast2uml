@@ -12,7 +12,7 @@ object ClangAstParser {
   private final val STRUCT = """CXXRecordDecl.*struct\s(.*)\sdefinition""".r
   private final val NAMESPACE = """NamespaceDecl.*\s(.*)$""".r
   private final val FIELD = """FieldDecl.*\s(.*)\s'(.*)'(| invalid)$""".r
-  private final val METHOD = """CXXMethodDecl.*\s(.*)\s'(.*)'(| invalid)$""".r
+  private final val METHOD = """CXXMethodDecl.*\s(.*)\s'(.*)'""".r
 
   private def extractChilds(lines: Stream[String], childs: List[Ast] = List(), nesting: Int = 0): (Stream[String], List[Ast]) = if (lines.isEmpty) {
     (Stream.empty[String], childs)
