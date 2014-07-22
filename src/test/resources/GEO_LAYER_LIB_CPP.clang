@@ -1,0 +1,424 @@
+TranslationUnitDecl 0x218c9e0 <<invalid sloc>>
+|-TypedefDecl 0x218cf20 <<invalid sloc>> __int128_t '__int128'
+|-TypedefDecl 0x218cf80 <<invalid sloc>> __uint128_t 'unsigned __int128'
+|-TypedefDecl 0x218d340 <<GEO_LAYER_LIB_CPPinvalid sloc>> __builtin_va_list '__va_list_tag [1]'
+|-NamespaceDecl 0x218d390 <./../librender/gldata.hpp:12:1, line:50:1> geo_render
+| |-TypedefDecl 0x218d400 <line:14:1, col:21> String 'int' invalid
+| |-TypedefDecl 0x218d460 <line:16:1, col:19> Mat4 'int' invalid
+| |-TypedefDecl 0x218d4c0 <line:17:1, col:19> Mat3 'int' invalid
+| |-TypedefDecl 0x218d520 <line:18:1, col:19> Vec2 'int' invalid
+| |-TypedefDecl 0x218d580 <line:19:1, col:19> Vec3 'int' invalid
+| |-TypedefDecl 0x218d5e0 <line:20:1, col:19> Vec4 'int' invalid
+| |-TypedefDecl 0x218d640 <line:21:1, col:20> Ivec2 'int' invalid
+| |-TypedefDecl 0x218d6a0 <line:22:1, col:20> Ivec3 'int' invalid
+| |-TypedefDecl 0x21d9970 <line:23:1, col:20> Ivec4 'int' invalid
+| |-TypedefDecl 0x21d99d0 <line:24:1, col:20> Uvec2 'int' invalid
+| |-TypedefDecl 0x21d9a30 <line:25:1, col:20> Uvec3 'int' invalid
+| |-TypedefDecl 0x21d9a90 <line:26:1, col:20> Uvec4 'int' invalid
+| |-TypedefDecl 0x21d9af0 <line:27:1, col:19> Quat 'int' invalid
+| |-CXXRecordDecl 0x21d9b40 <line:29:1, line:37:1> struct S_DrawData definition invalid
+| | |-CXXRecordDecl 0x21d9c50 <line:29:1, col:8> struct S_DrawData
+| | |-FieldDecl 0x21d9d70 <line:30:5, col:17> vertexes 'const Vec3 *'
+| | |-FieldDecl 0x21d9dd0 <line:31:5, col:17> normals 'const Vec3 *'
+| | |-FieldDecl 0x21d9e80 <line:32:5, col:17> texcoords 'const Vec2 *'
+| | |-FieldDecl 0x21d9f30 <line:33:5, col:17> color 'const Vec4 *'
+| | |-FieldDecl 0x21d9f90 <line:34:5, col:19> indexes 'const int *' invalid
+| | |-FieldDecl 0x21d9ff0 <line:35:5, col:12> glMode 'int' invalid
+| | `-FieldDecl 0x21da050 <line:36:5, col:12> size 'int' invalid
+| `-CXXRecordDecl 0x21da0a0 <line:39:1, line:48:1> struct S_DrawInfo definition
+|   |-CXXRecordDecl 0x21da1b0 <line:39:1, col:8> struct S_DrawInfo
+|   |-FieldDecl 0x21da270 <line:40:5, col:10> projectionMatrix 'Mat4':'int'
+|   |-FieldDecl 0x21da2d0 <line:41:5, col:10> viewMatrix 'Mat4':'int'
+|   |-FieldDecl 0x21da330 <line:42:5, col:10> viewProjectionMatrix 'Mat4':'int'
+|   |-FieldDecl 0x21da3b0 <line:43:5, col:10> normalMatrix 'Mat3':'int'
+|   |-FieldDecl 0x21da410 <line:44:5, col:10> color 'Vec4':'int'
+|   |-FieldDecl 0x21da470 <line:45:5, col:10> cameraTarget 'Vec3':'int'
+|   |-FieldDecl 0x21da4d0 <line:46:5, col:10> cameraEye 'Vec3':'int'
+|   `-FieldDecl 0x21da530 <line:47:5, col:11> vertexOffset 'float'
+|-NamespaceDecl 0x21da580 prev 0x218d390 <././geolayer_lib.hpp:9:1, line:72:1> geo_render
+| |-original Namespace 0x218d390 'geo_render'
+| |-CXXRecordDecl 0x21da5e0 <line:11:1, line:14:1> struct S_LayerProperty definition
+| | |-CXXRecordDecl 0x21da6f0 <line:11:1, col:8> struct S_LayerProperty
+| | |-FieldDecl 0x21da7b0 <line:12:5, col:12> name 'String':'int'
+| | `-FieldDecl 0x21da810 <line:13:5, col:12> value 'String':'int'
+| `-CXXRecordDecl 0x21da860 <line:16:1, line:70:1> class C_GeoLayer definition
+|   |-CXXRecordDecl 0x21e07c0 <line:16:1, col:7> class C_GeoLayer
+|   |-AccessSpecDecl 0x21e0850 <line:17:1, col:7> public
+|   |-CXXConstructorDecl 0x21e08f0 <line:18:5, col:16> C_GeoLayer 'void (void)'
+|   |-CXXDestructorDecl 0x21e0a00 <line:19:5, col:17> ~C_GeoLayer 'void (void)'
+|   |-CXXMethodDecl 0x21e0ad0 <line:21:5, col:16> reset 'void (void)'
+|   |-CXXMethodDecl 0x21e0c70 <line:22:5, col:57> setProperties 'void (const int &)'
+|   | `-ParmVarDecl 0x21e0bb0 <col:24, col:46> named_layer 'const int &' invalid invalid
+|   |-CXXMethodDecl 0x21e0df0 <line:23:5, col:50> setStrokeDasharray 'void (float)'
+|   | `-ParmVarDecl 0x21e0d30 <col:29, col:35> strokeDasharray 'float'
+|   |-CXXMethodDecl 0x21e0ef0 <line:24:5, col:32> getStrokeDasharray 'float (void) const'
+|   |-CXXMethodDecl 0x21e1020 <line:25:5, col:42> setStrokeWidth 'void (float)'
+|   | `-ParmVarDecl 0x21e0fa0 <col:25, col:31> strokeWidth 'float'
+|   |-CXXMethodDecl 0x21e10f0 <line:26:5, col:28> getStrokeWidth 'float (void) const'
+|   |-CXXMethodDecl 0x21e1290 <line:27:5, col:48> setStrokeColor 'void (const Vec4 &)'
+|   | `-ParmVarDecl 0x21e11d0 <col:25, col:37> strokeColor 'const Vec4 &'
+|   |-CXXMethodDecl 0x21e13c0 <line:28:5, col:27> getStrokeColor 'Vec4 (void) const'
+|   |-CXXMethodDecl 0x21e14f0 <line:29:5, col:44> setFillColor 'void (const Vec4 &)'
+|   | `-ParmVarDecl 0x21e1470 <col:23, col:35> fillColor 'const Vec4 &'
+|   |-CXXMethodDecl 0x21e15c0 <line:30:5, col:25> getFillColor 'Vec4 (void) const'
+|   |-CXXMethodDecl 0x21e3130 <line:31:5, col:66> setMaxLabelScaleDenominator 'void (int)'
+|   | `-ParmVarDecl 0x21e1670 <col:38, col:42> maxLabelScaleDenominator 'int'
+|   |-CXXMethodDecl 0x21e3200 <line:32:5, col:39> getMaxLabelScaleDenominator 'int (void) const'
+|   |-CXXMethodDecl 0x21e3330 <line:33:5, col:66> setMinLabelScaleDenominator 'void (int)'
+|   | `-ParmVarDecl 0x21e32b0 <col:38, col:42> minLabelScaleDenominator 'int'
+|   |-CXXMethodDecl 0x21e3400 <line:34:5, col:39> getMinLabelScaleDenominator 'int (void) const'
+|   |-CXXMethodDecl 0x21e3530 <line:35:5, col:30> setZOrder 'void (int)'
+|   | `-ParmVarDecl 0x21e34b0 <col:20, col:24> zOrder 'int'
+|   |-CXXMethodDecl 0x21e3600 <line:36:5, col:21> getZOrder 'int (void) const'
+|   |-CXXMethodDecl 0x21e3730 <line:37:5, col:48> setGeometryLayerId 'void (int)'
+|   | `-ParmVarDecl 0x21e36b0 <col:29, col:33> geometryLayerId 'int'
+|   |-CXXMethodDecl 0x21e3800 <line:38:5, col:30> getGeometryLayerId 'int (void) const'
+|   |-CXXMethodDecl 0x21e3970 <line:39:5, col:31> setView3d 'void (_Bool)'
+|   | `-ParmVarDecl 0x21e38b0 <col:20, col:25> view3d '_Bool'
+|   |-CXXMethodDecl 0x21e3a70 <line:40:5, col:21> isView3d '_Bool (void) const'
+|   |-CXXMethodDecl 0x21e3ba0 <line:41:5, col:37> setDirection 'void (_Bool)'
+|   | `-ParmVarDecl 0x21e3b20 <col:23, col:28> direction '_Bool'
+|   |-CXXMethodDecl 0x21e3c70 <line:42:5, col:24> isDirection '_Bool (void) const'
+|   |-CXXMethodDecl 0x21e3da0 <line:43:5, col:39> setSelectable 'void (_Bool)'
+|   | `-ParmVarDecl 0x21e3d20 <col:24, col:29> selectable '_Bool'
+|   |-CXXMethodDecl 0x21e3e70 <line:44:5, col:25> isSelectable '_Bool (void) const'
+|   |-CXXMethodDecl 0x21e3fa0 <line:45:5, col:43> setAntialiasing 'void (_Bool)'
+|   | `-ParmVarDecl 0x21e3f20 <col:26, col:31> antialiasing '_Bool'
+|   |-CXXMethodDecl 0x21e4070 <line:46:5, col:27> isAntialiasing '_Bool (void) const'
+|   |-CXXMethodDecl 0x21e5250 <line:47:5, col:46> setDecorator 'void (const String &)'
+|   | `-ParmVarDecl 0x21e5190 <col:23, col:37> decorator 'const String &'
+|   |-CXXMethodDecl 0x21e5350 <line:48:5, col:27> getDecorator 'String (void) const'
+|   |-CXXMethodDecl 0x21e5480 <line:49:5, col:46> setStyleName 'void (const String &)'
+|   | `-ParmVarDecl 0x21e5400 <col:23, col:37> styleName 'const String &'
+|   |-CXXMethodDecl 0x21e5550 <line:50:5, col:27> getStyleName 'String (void) const'
+|   |-CXXMethodDecl 0x21e5680 <line:51:5, col:36> setName 'void (const String &)'
+|   | `-ParmVarDecl 0x21e5600 <col:18, col:32> name 'const String &'
+|   |-CXXMethodDecl 0x21e5750 <line:52:5, col:22> getName 'String (void) const'
+|   |-AccessSpecDecl 0x21e57f0 <line:54:1, col:8> private
+|   |-FieldDecl 0x21e5830 <line:55:5, col:12> name 'String':'int'
+|   |-FieldDecl 0x21e5890 <line:56:5, col:12> styleName 'String':'int'
+|   |-FieldDecl 0x21e58f0 <line:57:5, col:12> decorator 'String':'int'
+|   |-FieldDecl 0x21e5950 <line:58:5, col:10> antialiasing '_Bool'
+|   |-FieldDecl 0x21e59b0 <line:59:5, col:10> selectable '_Bool'
+|   |-FieldDecl 0x21e5a10 <line:60:5, col:10> direction '_Bool'
+|   |-FieldDecl 0x21e5a70 <line:61:5, col:10> view3d '_Bool'
+|   |-FieldDecl 0x21e5ad0 <line:62:5, col:9> geometryLayerId 'int'
+|   |-FieldDecl 0x21e5b30 <line:63:5, col:9> zOrder 'int'
+|   |-FieldDecl 0x21e5b90 <line:64:5, col:9> minLabelScaleDenominator 'int'
+|   |-FieldDecl 0x21e5bf0 <line:65:5, col:9> maxLabelScaleDenominator 'int'
+|   |-FieldDecl 0x21e5c50 <line:66:5, col:10> fillColor 'Vec4':'int'
+|   |-FieldDecl 0x21e5cb0 <line:67:5, col:10> strokeColor 'Vec4':'int'
+|   |-FieldDecl 0x21e5d10 <line:68:5, col:11> strokeWidth 'float'
+|   |-FieldDecl 0x21e5d70 <line:69:5, col:11> strokeDasharray 'float'
+|   `-CXXConstructorDecl 0x21e6fd0 <line:16:7> C_GeoLayer 'void (const class geo_render::C_GeoLayer &)' inline noexcept-unevaluated 0x21e6fd0
+|     `-ParmVarDecl 0x21e7110 <col:7> 'const class geo_render::C_GeoLayer &'
+`-NamespaceDecl 0x21e5dc0 prev 0x21da580 <geolayer_lib.cpp:9:1, line:245:1> geo_render
+  |-original Namespace 0x218d390 'geo_render'
+  |-NamespaceDecl 0x21e5e20 <line:11:1, line:14:1>
+  | |-FunctionDecl 0x21e5fe0 <line:12:1, col:38> hexToRGB 'Vec3 (const String &)'
+  | | `-ParmVarDecl 0x21e5ee0 <col:15, col:29> hex_value 'const String &'
+  | `-FunctionDecl 0x21e6e90 <line:13:1, col:55> setColorToVec4 'Vec4 (const String &, float)'
+  |   |-ParmVarDecl 0x21e60a0 <col:21, col:35> hex_rgb 'const String &'
+  |   `-ParmVarDecl 0x21e6d80 <col:44, col:50> alpha 'float'
+  |-UsingDirectiveDecl 0x21e5e80 <line:11:11, <invalid sloc>> Namespace 0x21e5e20 ''
+  |-CXXConstructorDecl 0x21e7170 parent 0x21da860 prev 0x21e08f0 <line:16:1, line:18:1> C_GeoLayer 'void (void)'
+  | `-CompoundStmt 0x21e7308 <line:16:26, line:18:1>
+  |   `-CXXMemberCallExpr 0x21e72e0 <line:17:5, col:11> 'void'
+  |     `-MemberExpr 0x21e72b0 <col:5> '<bound member function type>' ->reset 0x21e0ad0
+  |       `-CXXThisExpr 0x21e7298 <col:5> 'class geo_render::C_GeoLayer *' this
+  |-CXXDestructorDecl 0x21e7380 parent 0x21da860 prev 0x21e0a00 <line:20:1, line:21:1> ~C_GeoLayer 'void (void)'
+  | `-CompoundStmt 0x21e7468 <line:20:27, line:21:1>
+  |-CXXMethodDecl 0x21e74c0 parent 0x21da860 prev 0x21e0ad0 <line:23:1, line:39:1> reset 'void (void)'
+  | `-CompoundStmt 0x21e7d30 <line:23:26, line:39:1>
+  |   |-BinaryOperator 0x21e76d0 <line:27:5, col:20> '_Bool' lvalue '='
+  |   | |-MemberExpr 0x21e7688 <col:5> '_Bool' lvalue ->antialiasing 0x21e5950
+  |   | | `-CXXThisExpr 0x21e7670 <col:5> 'class geo_render::C_GeoLayer *' this
+  |   | `-CXXBoolLiteralExpr 0x21e76b8 <col:20> '_Bool' false
+  |   |-BinaryOperator 0x21e7758 <line:28:5, col:18> '_Bool' lvalue '='
+  |   | |-MemberExpr 0x21e7710 <col:5> '_Bool' lvalue ->selectable 0x21e59b0
+  |   | | `-CXXThisExpr 0x21e76f8 <col:5> 'class geo_render::C_GeoLayer *' this
+  |   | `-CXXBoolLiteralExpr 0x21e7740 <col:18> '_Bool' false
+  |   |-BinaryOperator 0x21e77e0 <line:29:5, col:17> '_Bool' lvalue '='
+  |   | |-MemberExpr 0x21e7798 <col:5> '_Bool' lvalue ->direction 0x21e5a10
+  |   | | `-CXXThisExpr 0x21e7780 <col:5> 'class geo_render::C_GeoLayer *' this
+  |   | `-CXXBoolLiteralExpr 0x21e77c8 <col:17> '_Bool' false
+  |   |-BinaryOperator 0x21e7868 <line:30:5, col:14> '_Bool' lvalue '='
+  |   | |-MemberExpr 0x21e7820 <col:5> '_Bool' lvalue ->view3d 0x21e5a70
+  |   | | `-CXXThisExpr 0x21e7808 <col:5> 'class geo_render::C_GeoLayer *' this
+  |   | `-CXXBoolLiteralExpr 0x21e7850 <col:14> '_Bool' false
+  |   |-BinaryOperator 0x21e78f8 <line:31:5, col:23> 'int' lvalue '='
+  |   | |-MemberExpr 0x21e78a8 <col:5> 'int' lvalue ->geometryLayerId 0x21e5ad0
+  |   | | `-CXXThisExpr 0x21e7890 <col:5> 'class geo_render::C_GeoLayer *' this
+  |   | `-IntegerLiteral 0x21e78d8 <col:23> 'int' 0
+  |   |-BinaryOperator 0x21e7988 <line:32:5, col:14> 'int' lvalue '='
+  |   | |-MemberExpr 0x21e7938 <col:5> 'int' lvalue ->zOrder 0x21e5b30
+  |   | | `-CXXThisExpr 0x21e7920 <col:5> 'class geo_render::C_GeoLayer *' this
+  |   | `-IntegerLiteral 0x21e7968 <col:14> 'int' 0
+  |   |-BinaryOperator 0x21e7a18 <line:33:5, col:32> 'int' lvalue '='
+  |   | |-MemberExpr 0x21e79c8 <col:5> 'int' lvalue ->minLabelScaleDenominator 0x21e5b90
+  |   | | `-CXXThisExpr 0x21e79b0 <col:5> 'class geo_render::C_GeoLayer *' this
+  |   | `-IntegerLiteral 0x21e79f8 <col:32> 'int' 0
+  |   |-BinaryOperator 0x21e7aa8 <line:34:5, col:32> 'int' lvalue '='
+  |   | |-MemberExpr 0x21e7a58 <col:5> 'int' lvalue ->maxLabelScaleDenominator 0x21e5bf0
+  |   | | `-CXXThisExpr 0x21e7a40 <col:5> 'class geo_render::C_GeoLayer *' this
+  |   | `-IntegerLiteral 0x21e7a88 <col:32> 'int' 0
+  |   |-BinaryOperator 0x21e7b48 <line:35:5, col:22> 'Vec4':'int' lvalue '='
+  |   | |-MemberExpr 0x21e7ae8 <col:5> 'Vec4':'int' lvalue ->fillColor 0x21e5c50
+  |   | | `-CXXThisExpr 0x21e7ad0 <col:5> 'class geo_render::C_GeoLayer *' this
+  |   | `-CXXScalarValueInitExpr 0x21e7b28 <col:17, col:22> 'Vec4':'int'
+  |   |-BinaryOperator 0x21e7be8 <line:36:5, col:24> 'Vec4':'int' lvalue '='
+  |   | |-MemberExpr 0x21e7b88 <col:5> 'Vec4':'int' lvalue ->strokeColor 0x21e5cb0
+  |   | | `-CXXThisExpr 0x21e7b70 <col:5> 'class geo_render::C_GeoLayer *' this
+  |   | `-CXXScalarValueInitExpr 0x21e7bc8 <col:19, col:24> 'Vec4':'int'
+  |   |-BinaryOperator 0x21e7c78 <line:37:5, col:19> 'float' lvalue '='
+  |   | |-MemberExpr 0x21e7c28 <col:5> 'float' lvalue ->strokeWidth 0x21e5d10
+  |   | | `-CXXThisExpr 0x21e7c10 <col:5> 'class geo_render::C_GeoLayer *' this
+  |   | `-FloatingLiteral 0x21e7c58 <col:19> 'float' 0.000000e+00
+  |   `-BinaryOperator 0x21e7d08 <line:38:5, col:23> 'float' lvalue '='
+  |     |-MemberExpr 0x21e7cb8 <col:5> 'float' lvalue ->strokeDasharray 0x21e5d70
+  |     | `-CXXThisExpr 0x21e7ca0 <col:5> 'class geo_render::C_GeoLayer *' this
+  |     `-FloatingLiteral 0x21e7ce8 <col:23> 'float' 0.000000e+00
+  |-CXXMethodDecl 0x21e7eb0 parent 0x21da860 <line:41:1, line:95:1> setProperties 'void (const int &)'
+  | |-ParmVarDecl 0x21e7e30 <line:41:32, col:54> named_layer 'const int &' invalid
+  | `-CompoundStmt 0x21e9550 <col:67, line:95:1>
+  |   |-DeclStmt 0x21e8af0 <line:58:5, line:59:37>
+  |   | `-VarDecl 0x21e89e0 <line:58:5, col:27> name_node 'const int &' invalid
+  |   |-DeclStmt 0x21e8c90 <line:63:5, line:64:54>
+  |   | `-VarDecl 0x21e8b70 <line:63:5, col:27> rule_node 'const int &' invalid
+  |   `-DeclStmt 0x21e8fb8 <line:72:5, line:74:72>
+  |     `-VarDecl 0x21e8e80 <line:72:5, col:27> polygon_symbolizer_node 'const int &' invalid invalid
+  |-CXXMethodDecl 0x21e9630 parent 0x21da860 prev 0x21e0df0 <line:97:1, line:99:1> setStrokeDasharray 'void (float)'
+  | |-ParmVarDecl 0x21e95b0 <line:97:37, col:43> strokeDasharray 'float'
+  | `-CompoundStmt 0x21e97c0 <col:60, line:99:1>
+  |   `-BinaryOperator 0x21e9798 <line:98:5, col:29> 'float' lvalue '='
+  |     |-MemberExpr 0x21e9728 <col:5, col:11> 'float' lvalue ->strokeDasharray 0x21e5d70
+  |     | `-CXXThisExpr 0x21e9710 <col:5> 'class geo_render::C_GeoLayer *' this
+  |     `-ImplicitCastExpr 0x21e9780 <col:29> 'float' <LValueToRValue>
+  |       `-DeclRefExpr 0x21e9758 <col:29> 'float' lvalue ParmVar 0x21e95b0 'strokeDasharray' 'float'
+  |-CXXMethodDecl 0x21e9820 parent 0x21da860 prev 0x21e0ef0 <line:101:1, line:103:1> getStrokeDasharray 'float (void) const'
+  | `-CompoundStmt 0x21e99a8 <line:101:46, line:103:1>
+  |   `-ReturnStmt 0x21e9988 <line:102:5, col:12>
+  |     `-ImplicitCastExpr 0x21e9970 <col:12> 'float' <LValueToRValue>
+  |       `-MemberExpr 0x21e9940 <col:12> 'const float' lvalue ->strokeDasharray 0x21e5d70
+  |         `-CXXThisExpr 0x21e9928 <col:12> 'const class geo_render::C_GeoLayer *' this
+  |-CXXMethodDecl 0x21e9a80 parent 0x21da860 prev 0x21e1020 <line:105:1, line:107:1> setStrokeWidth 'void (float)'
+  | |-ParmVarDecl 0x21e9a00 <line:105:33, col:39> strokeWidth 'float'
+  | `-CompoundStmt 0x21e9c10 <col:52, line:107:1>
+  |   `-BinaryOperator 0x21e9be8 <line:106:5, col:25> 'float' lvalue '='
+  |     |-MemberExpr 0x21e9b78 <col:5, col:11> 'float' lvalue ->strokeWidth 0x21e5d10
+  |     | `-CXXThisExpr 0x21e9b60 <col:5> 'class geo_render::C_GeoLayer *' this
+  |     `-ImplicitCastExpr 0x21e9bd0 <col:25> 'float' <LValueToRValue>
+  |       `-DeclRefExpr 0x21e9ba8 <col:25> 'float' lvalue ParmVar 0x21e9a00 'strokeWidth' 'float'
+  |-CXXMethodDecl 0x21e9c70 parent 0x21da860 prev 0x21e10f0 <line:109:1, line:111:1> getStrokeWidth 'float (void) const'
+  | `-CompoundStmt 0x21e9de8 <line:109:42, line:111:1>
+  |   `-ReturnStmt 0x21e9dc8 <line:110:5, col:12>
+  |     `-ImplicitCastExpr 0x21e9db0 <col:12> 'float' <LValueToRValue>
+  |       `-MemberExpr 0x21e9d60 <col:12> 'const float' lvalue ->strokeWidth 0x21e5d10
+  |         `-CXXThisExpr 0x21e9d48 <col:12> 'const class geo_render::C_GeoLayer *' this
+  |-CXXMethodDecl 0x21e9ec0 parent 0x21da860 prev 0x21e1290 <line:113:1, line:115:1> setStrokeColor 'void (const Vec4 &)'
+  | |-ParmVarDecl 0x21e9e40 <line:113:33, col:45> strokeColor 'const Vec4 &'
+  | `-CompoundStmt 0x21ea050 <col:58, line:115:1>
+  |   `-BinaryOperator 0x21ea028 <line:114:5, col:25> 'Vec4':'int' lvalue '='
+  |     |-MemberExpr 0x21e9fb8 <col:5, col:11> 'Vec4':'int' lvalue ->strokeColor 0x21e5cb0
+  |     | `-CXXThisExpr 0x21e9fa0 <col:5> 'class geo_render::C_GeoLayer *' this
+  |     `-ImplicitCastExpr 0x21ea010 <col:25> 'Vec4':'int' <LValueToRValue>
+  |       `-DeclRefExpr 0x21e9fe8 <col:25> 'const Vec4':'const int' lvalue ParmVar 0x21e9e40 'strokeColor' 'const Vec4 &'
+  |-CXXMethodDecl 0x21ea0b0 parent 0x21da860 prev 0x21e13c0 <line:117:1, line:119:1> getStrokeColor 'Vec4 (void) const'
+  | `-CompoundStmt 0x21ea208 <line:117:41, line:119:1>
+  |   `-ReturnStmt 0x21ea1e8 <line:118:5, col:12>
+  |     `-ImplicitCastExpr 0x21ea1d0 <col:12> 'Vec4':'int' <LValueToRValue>
+  |       `-MemberExpr 0x21ea1a0 <col:12> 'const Vec4':'const int' lvalue ->strokeColor 0x21e5cb0
+  |         `-CXXThisExpr 0x21ea188 <col:12> 'const class geo_render::C_GeoLayer *' this
+  |-CXXMethodDecl 0x21ea2e0 parent 0x21da860 prev 0x21e14f0 <line:121:1, line:123:1> setFillColor 'void (const Vec4 &)'
+  | |-ParmVarDecl 0x21ea260 <line:121:31, col:43> fillColor 'const Vec4 &'
+  | `-CompoundStmt 0x21ea470 <col:54, line:123:1>
+  |   `-BinaryOperator 0x21ea448 <line:122:5, col:23> 'Vec4':'int' lvalue '='
+  |     |-MemberExpr 0x21ea3d8 <col:5, col:11> 'Vec4':'int' lvalue ->fillColor 0x21e5c50
+  |     | `-CXXThisExpr 0x21ea3c0 <col:5> 'class geo_render::C_GeoLayer *' this
+  |     `-ImplicitCastExpr 0x21ea430 <col:23> 'Vec4':'int' <LValueToRValue>
+  |       `-DeclRefExpr 0x21ea408 <col:23> 'const Vec4':'const int' lvalue ParmVar 0x21ea260 'fillColor' 'const Vec4 &'
+  |-CXXMethodDecl 0x21ea4d0 parent 0x21da860 prev 0x21e15c0 <line:125:1, line:127:1> getFillColor 'Vec4 (void) const'
+  | `-CompoundStmt 0x21ea628 <line:125:39, line:127:1>
+  |   `-ReturnStmt 0x21ea608 <line:126:5, col:12>
+  |     `-ImplicitCastExpr 0x21ea5f0 <col:12> 'Vec4':'int' <LValueToRValue>
+  |       `-MemberExpr 0x21ea5c0 <col:12> 'const Vec4':'const int' lvalue ->fillColor 0x21e5c50
+  |         `-CXXThisExpr 0x21ea5a8 <col:12> 'const class geo_render::C_GeoLayer *' this
+  |-CXXMethodDecl 0x21ea700 parent 0x21da860 prev 0x21e3130 <line:129:1, line:131:1> setMaxLabelScaleDenominator 'void (int)'
+  | |-ParmVarDecl 0x21ea680 <line:129:46, col:50> maxLabelScaleDenominator 'int'
+  | `-CompoundStmt 0x21ea890 <col:76, line:131:1>
+  |   `-BinaryOperator 0x21ea868 <line:130:5, col:38> 'int' lvalue '='
+  |     |-MemberExpr 0x21ea7f8 <col:5, col:11> 'int' lvalue ->maxLabelScaleDenominator 0x21e5bf0
+  |     | `-CXXThisExpr 0x21ea7e0 <col:5> 'class geo_render::C_GeoLayer *' this
+  |     `-ImplicitCastExpr 0x21ea850 <col:38> 'int' <LValueToRValue>
+  |       `-DeclRefExpr 0x21ea828 <col:38> 'int' lvalue ParmVar 0x21ea680 'maxLabelScaleDenominator' 'int'
+  |-CXXMethodDecl 0x21ea8f0 parent 0x21da860 prev 0x21e3200 <line:133:1, line:135:1> getMaxLabelScaleDenominator 'int (void) const'
+  | `-CompoundStmt 0x21eaa48 <line:133:53, line:135:1>
+  |   `-ReturnStmt 0x21eaa28 <line:134:5, col:12>
+  |     `-ImplicitCastExpr 0x21eaa10 <col:12> 'int' <LValueToRValue>
+  |       `-MemberExpr 0x21ea9e0 <col:12> 'const int' lvalue ->maxLabelScaleDenominator 0x21e5bf0
+  |         `-CXXThisExpr 0x21ea9c8 <col:12> 'const class geo_render::C_GeoLayer *' this
+  |-CXXMethodDecl 0x21eab20 parent 0x21da860 prev 0x21e3330 <line:137:1, line:139:1> setMinLabelScaleDenominator 'void (int)'
+  | |-ParmVarDecl 0x21eaaa0 <line:137:46, col:50> minLabelScaleDenominator 'int'
+  | `-CompoundStmt 0x21eacb0 <col:76, line:139:1>
+  |   `-BinaryOperator 0x21eac88 <line:138:5, col:38> 'int' lvalue '='
+  |     |-MemberExpr 0x21eac18 <col:5, col:11> 'int' lvalue ->minLabelScaleDenominator 0x21e5b90
+  |     | `-CXXThisExpr 0x21eac00 <col:5> 'class geo_render::C_GeoLayer *' this
+  |     `-ImplicitCastExpr 0x21eac70 <col:38> 'int' <LValueToRValue>
+  |       `-DeclRefExpr 0x21eac48 <col:38> 'int' lvalue ParmVar 0x21eaaa0 'minLabelScaleDenominator' 'int'
+  |-CXXMethodDecl 0x21eadc0 parent 0x21da860 prev 0x21e3400 <line:141:1, line:143:1> getMinLabelScaleDenominator 'int (void) const'
+  | `-CompoundStmt 0x21eaf18 <line:141:53, line:143:1>
+  |   `-ReturnStmt 0x21eaef8 <line:142:5, col:12>
+  |     `-ImplicitCastExpr 0x21eaee0 <col:12> 'int' <LValueToRValue>
+  |       `-MemberExpr 0x21eaeb0 <col:12> 'const int' lvalue ->minLabelScaleDenominator 0x21e5b90
+  |         `-CXXThisExpr 0x21eae98 <col:12> 'const class geo_render::C_GeoLayer *' this
+  |-CXXMethodDecl 0x21eaff0 parent 0x21da860 prev 0x21e3530 <line:145:1, line:147:1> setZOrder 'void (int)'
+  | |-ParmVarDecl 0x21eaf70 <line:145:28, col:32> zOrder 'int'
+  | `-CompoundStmt 0x21eb180 <col:40, line:147:1>
+  |   `-BinaryOperator 0x21eb158 <line:146:5, col:20> 'int' lvalue '='
+  |     |-MemberExpr 0x21eb0e8 <col:5, col:11> 'int' lvalue ->zOrder 0x21e5b30
+  |     | `-CXXThisExpr 0x21eb0d0 <col:5> 'class geo_render::C_GeoLayer *' this
+  |     `-ImplicitCastExpr 0x21eb140 <col:20> 'int' <LValueToRValue>
+  |       `-DeclRefExpr 0x21eb118 <col:20> 'int' lvalue ParmVar 0x21eaf70 'zOrder' 'int'
+  |-CXXMethodDecl 0x21eb1e0 parent 0x21da860 prev 0x21e3600 <line:149:1, line:151:1> getZOrder 'int (void) const'
+  | `-CompoundStmt 0x21eb338 <line:149:35, line:151:1>
+  |   `-ReturnStmt 0x21eb318 <line:150:5, col:12>
+  |     `-ImplicitCastExpr 0x21eb300 <col:12> 'int' <LValueToRValue>
+  |       `-MemberExpr 0x21eb2d0 <col:12> 'const int' lvalue ->zOrder 0x21e5b30
+  |         `-CXXThisExpr 0x21eb2b8 <col:12> 'const class geo_render::C_GeoLayer *' this
+  |-CXXMethodDecl 0x21eb410 parent 0x21da860 prev 0x21e3730 <line:153:1, line:155:1> setGeometryLayerId 'void (int)'
+  | |-ParmVarDecl 0x21eb390 <line:153:37, col:41> geometryLayerId 'int'
+  | `-CompoundStmt 0x21eb5a0 <col:58, line:155:1>
+  |   `-BinaryOperator 0x21eb578 <line:154:5, col:29> 'int' lvalue '='
+  |     |-MemberExpr 0x21eb508 <col:5, col:11> 'int' lvalue ->geometryLayerId 0x21e5ad0
+  |     | `-CXXThisExpr 0x21eb4f0 <col:5> 'class geo_render::C_GeoLayer *' this
+  |     `-ImplicitCastExpr 0x21eb560 <col:29> 'int' <LValueToRValue>
+  |       `-DeclRefExpr 0x21eb538 <col:29> 'int' lvalue ParmVar 0x21eb390 'geometryLayerId' 'int'
+  |-CXXMethodDecl 0x21eb600 parent 0x21da860 prev 0x21e3800 <line:157:1, line:159:1> getGeometryLayerId 'int (void) const'
+  | `-CompoundStmt 0x21eb758 <line:157:44, line:159:1>
+  |   `-ReturnStmt 0x21eb738 <line:158:5, col:12>
+  |     `-ImplicitCastExpr 0x21eb720 <col:12> 'int' <LValueToRValue>
+  |       `-MemberExpr 0x21eb6f0 <col:12> 'const int' lvalue ->geometryLayerId 0x21e5ad0
+  |         `-CXXThisExpr 0x21eb6d8 <col:12> 'const class geo_render::C_GeoLayer *' this
+  |-CXXMethodDecl 0x21eb830 parent 0x21da860 prev 0x21e3970 <line:161:1, line:163:1> setView3d 'void (_Bool)'
+  | |-ParmVarDecl 0x21eb7b0 <line:161:28, col:33> view3d '_Bool'
+  | `-CompoundStmt 0x21eb9c0 <col:41, line:163:1>
+  |   `-BinaryOperator 0x21eb998 <line:162:5, col:20> '_Bool' lvalue '='
+  |     |-MemberExpr 0x21eb928 <col:5, col:11> '_Bool' lvalue ->view3d 0x21e5a70
+  |     | `-CXXThisExpr 0x21eb910 <col:5> 'class geo_render::C_GeoLayer *' this
+  |     `-ImplicitCastExpr 0x21eb980 <col:20> '_Bool' <LValueToRValue>
+  |       `-DeclRefExpr 0x21eb958 <col:20> '_Bool' lvalue ParmVar 0x21eb7b0 'view3d' '_Bool'
+  |-CXXMethodDecl 0x21eba20 parent 0x21da860 prev 0x21e3a70 <line:165:1, line:167:1> isView3d '_Bool (void) const'
+  | `-CompoundStmt 0x21ebb78 <line:165:35, line:167:1>
+  |   `-ReturnStmt 0x21ebb58 <line:166:5, col:12>
+  |     `-ImplicitCastExpr 0x21ebb40 <col:12> '_Bool' <LValueToRValue>
+  |       `-MemberExpr 0x21ebb10 <col:12> 'const _Bool' lvalue ->view3d 0x21e5a70
+  |         `-CXXThisExpr 0x21ebaf8 <col:12> 'const class geo_render::C_GeoLayer *' this
+  |-CXXMethodDecl 0x21ebc50 parent 0x21da860 prev 0x21e3ba0 <line:169:1, line:171:1> setDirection 'void (_Bool)'
+  | |-ParmVarDecl 0x21ebbd0 <line:169:31, col:36> direction '_Bool'
+  | `-CompoundStmt 0x21ebe10 <col:47, line:171:1>
+  |   `-BinaryOperator 0x21ebde8 <line:170:5, col:23> '_Bool' lvalue '='
+  |     |-MemberExpr 0x21ebd48 <col:5, col:11> '_Bool' lvalue ->direction 0x21e5a10
+  |     | `-CXXThisExpr 0x21ebd30 <col:5> 'class geo_render::C_GeoLayer *' this
+  |     `-ImplicitCastExpr 0x21ebdd0 <col:23> '_Bool' <LValueToRValue>
+  |       `-DeclRefExpr 0x21ebd78 <col:23> '_Bool' lvalue ParmVar 0x21ebbd0 'direction' '_Bool'
+  |-CXXMethodDecl 0x21ebe70 parent 0x21da860 prev 0x21e3c70 <line:173:1, line:175:1> isDirection '_Bool (void) const'
+  | `-CompoundStmt 0x21ebfc8 <line:173:38, line:175:1>
+  |   `-ReturnStmt 0x21ebfa8 <line:174:5, col:12>
+  |     `-ImplicitCastExpr 0x21ebf90 <col:12> '_Bool' <LValueToRValue>
+  |       `-MemberExpr 0x21ebf60 <col:12> 'const _Bool' lvalue ->direction 0x21e5a10
+  |         `-CXXThisExpr 0x21ebf48 <col:12> 'const class geo_render::C_GeoLayer *' this
+  |-CXXMethodDecl 0x21ec0a0 parent 0x21da860 prev 0x21e3da0 <line:177:1, line:179:1> setSelectable 'void (_Bool)'
+  | |-ParmVarDecl 0x21ec020 <line:177:32, col:37> selectable '_Bool'
+  | `-CompoundStmt 0x21ec230 <col:49, line:179:1>
+  |   `-BinaryOperator 0x21ec208 <line:178:5, col:24> '_Bool' lvalue '='
+  |     |-MemberExpr 0x21ec198 <col:5, col:11> '_Bool' lvalue ->selectable 0x21e59b0
+  |     | `-CXXThisExpr 0x21ec180 <col:5> 'class geo_render::C_GeoLayer *' this
+  |     `-ImplicitCastExpr 0x21ec1f0 <col:24> '_Bool' <LValueToRValue>
+  |       `-DeclRefExpr 0x21ec1c8 <col:24> '_Bool' lvalue ParmVar 0x21ec020 'selectable' '_Bool'
+  |-CXXMethodDecl 0x21ec290 parent 0x21da860 prev 0x21e3e70 <line:181:1, line:183:1> isSelectable '_Bool (void) const'
+  | `-CompoundStmt 0x21ec3e8 <line:181:39, line:183:1>
+  |   `-ReturnStmt 0x21ec3c8 <line:182:5, col:12>
+  |     `-ImplicitCastExpr 0x21ec3b0 <col:12> '_Bool' <LValueToRValue>
+  |       `-MemberExpr 0x21ec380 <col:12> 'const _Bool' lvalue ->selectable 0x21e59b0
+  |         `-CXXThisExpr 0x21ec368 <col:12> 'const class geo_render::C_GeoLayer *' this
+  |-CXXMethodDecl 0x21ec4c0 parent 0x21da860 prev 0x21e3fa0 <line:185:1, line:187:1> setAntialiasing 'void (_Bool)'
+  | |-ParmVarDecl 0x21ec440 <line:185:34, col:39> antialiasing '_Bool'
+  | `-CompoundStmt 0x21ec650 <col:53, line:187:1>
+  |   `-BinaryOperator 0x21ec628 <line:186:5, col:26> '_Bool' lvalue '='
+  |     |-MemberExpr 0x21ec5b8 <col:5, col:11> '_Bool' lvalue ->antialiasing 0x21e5950
+  |     | `-CXXThisExpr 0x21ec5a0 <col:5> 'class geo_render::C_GeoLayer *' this
+  |     `-ImplicitCastExpr 0x21ec610 <col:26> '_Bool' <LValueToRValue>
+  |       `-DeclRefExpr 0x21ec5e8 <col:26> '_Bool' lvalue ParmVar 0x21ec440 'antialiasing' '_Bool'
+  |-CXXMethodDecl 0x21ec6b0 parent 0x21da860 prev 0x21e4070 <line:189:1, line:191:1> isAntialiasing '_Bool (void) const'
+  | `-CompoundStmt 0x21ec808 <line:189:41, line:191:1>
+  |   `-ReturnStmt 0x21ec7e8 <line:190:5, col:12>
+  |     `-ImplicitCastExpr 0x21ec7d0 <col:12> '_Bool' <LValueToRValue>
+  |       `-MemberExpr 0x21ec7a0 <col:12> 'const _Bool' lvalue ->antialiasing 0x21e5950
+  |         `-CXXThisExpr 0x21ec788 <col:12> 'const class geo_render::C_GeoLayer *' this
+  |-CXXMethodDecl 0x21ec8e0 parent 0x21da860 prev 0x21e5250 <line:193:1, line:195:1> setDecorator 'void (const String &)'
+  | |-ParmVarDecl 0x21ec860 <line:193:31, col:45> decorator 'const String &'
+  | `-CompoundStmt 0x21eca70 <col:56, line:195:1>
+  |   `-BinaryOperator 0x21eca48 <line:194:5, col:23> 'String':'int' lvalue '='
+  |     |-MemberExpr 0x21ec9d8 <col:5, col:11> 'String':'int' lvalue ->decorator 0x21e58f0
+  |     | `-CXXThisExpr 0x21ec9c0 <col:5> 'class geo_render::C_GeoLayer *' this
+  |     `-ImplicitCastExpr 0x21eca30 <col:23> 'String':'int' <LValueToRValue>
+  |       `-DeclRefExpr 0x21eca08 <col:23> 'const String':'const int' lvalue ParmVar 0x21ec860 'decorator' 'const String &'
+  |-CXXMethodDecl 0x21ecad0 parent 0x21da860 prev 0x21e5350 <line:197:1, line:199:1> getDecorator 'String (void) const'
+  | `-CompoundStmt 0x21ecc28 <line:197:41, line:199:1>
+  |   `-ReturnStmt 0x21ecc08 <line:198:5, col:12>
+  |     `-ImplicitCastExpr 0x21ecbf0 <col:12> 'String':'int' <LValueToRValue>
+  |       `-MemberExpr 0x21ecbc0 <col:12> 'const String':'const int' lvalue ->decorator 0x21e58f0
+  |         `-CXXThisExpr 0x21ecba8 <col:12> 'const class geo_render::C_GeoLayer *' this
+  |-CXXMethodDecl 0x21ecd00 parent 0x21da860 prev 0x21e5480 <line:201:1, line:203:1> setStyleName 'void (const String &)'
+  | |-ParmVarDecl 0x21ecc80 <line:201:31, col:45> styleName 'const String &'
+  | `-CompoundStmt 0x21ecec0 <col:56, line:203:1>
+  |   `-BinaryOperator 0x21ece98 <line:202:5, col:23> 'String':'int' lvalue '='
+  |     |-MemberExpr 0x21ece28 <col:5, col:11> 'String':'int' lvalue ->styleName 0x21e5890
+  |     | `-CXXThisExpr 0x21ece10 <col:5> 'class geo_render::C_GeoLayer *' this
+  |     `-ImplicitCastExpr 0x21ece80 <col:23> 'String':'int' <LValueToRValue>
+  |       `-DeclRefExpr 0x21ece58 <col:23> 'const String':'const int' lvalue ParmVar 0x21ecc80 'styleName' 'const String &'
+  |-CXXMethodDecl 0x21ecf20 parent 0x21da860 prev 0x21e5550 <line:205:1, line:207:1> getStyleName 'String (void) const'
+  | `-CompoundStmt 0x21ed078 <line:205:41, line:207:1>
+  |   `-ReturnStmt 0x21ed058 <line:206:5, col:12>
+  |     `-ImplicitCastExpr 0x21ed040 <col:12> 'String':'int' <LValueToRValue>
+  |       `-MemberExpr 0x21ed010 <col:12> 'const String':'const int' lvalue ->styleName 0x21e5890
+  |         `-CXXThisExpr 0x21ecff8 <col:12> 'const class geo_render::C_GeoLayer *' this
+  |-CXXMethodDecl 0x21ed150 parent 0x21da860 prev 0x21e5680 <line:209:1, line:211:1> setName 'void (const String &)'
+  | |-ParmVarDecl 0x21ed0d0 <line:209:26, col:40> name 'const String &'
+  | `-CompoundStmt 0x21ed2e0 <col:46, line:211:1>
+  |   `-BinaryOperator 0x21ed2b8 <line:210:5, col:18> 'String':'int' lvalue '='
+  |     |-MemberExpr 0x21ed248 <col:5, col:11> 'String':'int' lvalue ->name 0x21e5830
+  |     | `-CXXThisExpr 0x21ed230 <col:5> 'class geo_render::C_GeoLayer *' this
+  |     `-ImplicitCastExpr 0x21ed2a0 <col:18> 'String':'int' <LValueToRValue>
+  |       `-DeclRefExpr 0x21ed278 <col:18> 'const String':'const int' lvalue ParmVar 0x21ed0d0 'name' 'const String &'
+  |-CXXMethodDecl 0x21ed340 parent 0x21da860 prev 0x21e5750 <line:213:1, line:215:1> getName 'String (void) const'
+  | `-CompoundStmt 0x21ed498 <line:213:36, line:215:1>
+  |   `-ReturnStmt 0x21ed478 <line:214:5, col:12>
+  |     `-ImplicitCastExpr 0x21ed460 <col:12> 'String':'int' <LValueToRValue>
+  |       `-MemberExpr 0x21ed430 <col:12> 'const String':'const int' lvalue ->name 0x21e5830
+  |         `-CXXThisExpr 0x21ed418 <col:12> 'const class geo_render::C_GeoLayer *' this
+  `-NamespaceDecl 0x21ed4c0 prev 0x21e5e20 <line:217:1, line:243:1>
+    |-original Namespace 0x21e5e20 ''
+    |-FunctionDecl 0x21ed5b0 prev 0x21e5fe0 <line:219:1, line:236:1> hexToRGB 'Vec3 (const String &)'
+    | |-ParmVarDecl 0x21ed530 <line:219:15, col:29> hex_value 'const String &'
+    | `-CompoundStmt 0x21edf28 <col:40, line:236:1>
+    |   |-DeclStmt 0x21ed708 <line:220:5, col:27>
+    |   | `-VarDecl 0x21ed670 <col:5, col:18> hex 'String':'int'
+    |   |   `-ImplicitCastExpr 0x21ed6f0 <col:18> 'String':'int' <LValueToRValue>
+    |   |     `-DeclRefExpr 0x21ed6c8 <col:18> 'const String':'const int' lvalue ParmVar 0x21ed530 'hex_value' 'const String &'
+    |   |-DeclStmt 0x21ed788 <line:221:5, col:33>
+    |   | `-VarDecl 0x21ed730 <col:5, col:23> str_stream 'int' invalid
+    |   `-DeclStmt 0x21ed840 <line:222:5, col:27>
+    |     `-VarDecl 0x21ed7b0 <col:5, col:26> color 'unsigned int'
+    |       `-ImplicitCastExpr 0x21ed828 <col:26> 'unsigned int' <IntegralCast>
+    |         `-IntegerLiteral 0x21ed808 <col:26> 'int' 0
+    `-FunctionDecl 0x21ee070 prev 0x21e6e90 <line:238:1, line:241:1> setColorToVec4 'Vec4 (const String &, float)'
+      |-ParmVarDecl 0x21edf70 <line:238:21, col:35> hex_rgb 'const String &'
+      |-ParmVarDecl 0x21edfe0 <col:44, col:50> alpha 'float'
+      `-CompoundStmt 0x21ee348 <col:57, line:241:1>
+        `-DeclStmt 0x21ee2d0 <line:239:5, col:33>
+          `-VarDecl 0x21ee130 <col:5, col:32> rgb 'Vec3':'int'
+            `-CallExpr 0x21ee2a0 <col:16, col:32> 'Vec3':'int'
+              |-ImplicitCastExpr 0x21ee288 <col:16> 'Vec3 (*)(const String &)' <FunctionToPointerDecay>
+              | `-DeclRefExpr 0x21ee208 <col:16> 'Vec3 (const String &)' lvalue Function 0x21ed5b0 'hexToRGB' 'Vec3 (const String &)'
+              `-DeclRefExpr 0x21ee1e0 <col:25> 'const String':'const int' lvalue ParmVar 0x21edf70 'hex_rgb' 'const String &'

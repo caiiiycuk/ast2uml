@@ -1,0 +1,837 @@
+TranslationUnitDecl 0x185da20 <<invalid sloc>>
+|-TypedefDecl 0x185df60 <<invalid sloc>> __int128_t '__int128'
+|-TypedefDecl 0x185dfc0 <<invalid sloc>> __uint128_t 'unsigned __int128'
+|-TypedefDecl 0x185e380 <<invalid sloc>> __builtin_va_list '__va_list_tag [1]'
+|-NamespaceDecl 0x185e3d0 </home/caiiiycuk/emscripten-sdk/projects/rendering/librenderfactory/../librender/gldata.hpp:12:1, line:50:1> geo_render
+| |-TypedefDecl 0x185e440 <line:14:1, col:21> String 'int' invalid
+| |-TypedefDecl 0x185e4a0 <line:16:1, col:19> Mat4 'int' invalid
+| |-TypedefDecl 0x185e500 <line:17:1, col:19> Mat3 'int' invalid
+| |-TypedefDecl 0x185e560 <line:18:1, col:19> Vec2 'int' invalid
+| |-TypedefDecl 0x185e5c0 <line:19:1, col:19> Vec3 'int' invalid
+| |-TypedefDecl 0x185e620 <line:20:1, col:19> Vec4 'int' invalid
+| |-TypedefDecl 0x185e680 <line:21:1, col:20> Ivec2 'int' invalid
+| |-TypedefDecl 0x185e6e0 <line:22:1, col:20> Ivec3 'int' invalid
+| |-TypedefDecl 0x18ab6d0 <line:23:1, col:20> Ivec4 'int' invalid
+| |-TypedefDecl 0x18ab730 <line:24:1, col:20> Uvec2 'int' invalid
+| |-TypedefDecl 0x18ab790 <line:25:1, col:20> Uvec3 'int' invalid
+| |-TypedefDecl 0x18ab7f0 <line:26:1, col:20> Uvec4 'int' invalid
+| |-TypedefDecl 0x18ab850 <line:27:1, col:19> Quat 'int' invalid
+| |-CXXRecordDecl 0x18ab8a0 <line:29:1, line:37:1> struct S_DrawData definition invalid
+| | |-CXXRecordDecl 0x18ab9b0 <line:29:1, col:8> struct S_DrawData
+| | |-FieldDecl 0x18abad0 <line:30:5, col:17> vertexes 'const Vec3 *'
+| | |-FieldDecl 0x18abb30 <line:31:5, col:17> normals 'const Vec3 *'
+| | |-FieldDecl 0x18abbe0 <line:32:5, col:17> texcoords 'const Vec2 *'
+| | |-FieldDecl 0x18abc90 <line:33:5, col:17> color 'const Vec4 *'
+| | |-FieldDecl 0x18abcf0 <line:34:5, col:19> indexes 'const int *' invalid
+| | |-FieldDecl 0x18abd50 <line:35:5, col:12> glMode 'int' invalid
+| | |-FieldDecl 0x18abdb0 <line:36:5, col:12> size 'int' invalid
+| | |-CXXConstructorDecl 0x18d5200 <line:29:8> S_DrawData 'void (void)' inline noexcept-unevaluated 0x18d5200
+| | | `-CompoundStmt 0x18d5460 <col:8>
+| | `-CXXConstructorDecl 0x18d5300 <col:8> S_DrawData 'void (const struct geo_render::S_DrawData &)' inline noexcept-unevaluated 0x18d5300
+| |   `-ParmVarDecl 0x18d5400 <col:8> 'const struct geo_render::S_DrawData &'
+| `-CXXRecordDecl 0x18abe00 <line:39:1, line:48:1> struct S_DrawInfo definition
+|   |-CXXRecordDecl 0x18abf10 <line:39:1, col:8> struct S_DrawInfo
+|   |-FieldDecl 0x18abfd0 <line:40:5, col:10> projectionMatrix 'Mat4':'int'
+|   |-FieldDecl 0x18ac030 <line:41:5, col:10> viewMatrix 'Mat4':'int'
+|   |-FieldDecl 0x18ac090 <line:42:5, col:10> viewProjectionMatrix 'Mat4':'int'
+|   |-FieldDecl 0x18ac110 <line:43:5, col:10> normalMatrix 'Mat3':'int'
+|   |-FieldDecl 0x18ac170 <line:44:5, col:10> color 'Vec4':'int'
+|   |-FieldDecl 0x18ac1d0 <line:45:5, col:10> cameraTarget 'Vec3':'int'
+|   |-FieldDecl 0x18ac230 <line:46:5, col:10> cameraEye 'Vec3':'int'
+|   |-FieldDecl 0x18ac290 <line:47:5, col:11> vertexOffset 'float'
+|   |-CXXConstructorDecl 0x18cf790 <line:39:8> S_DrawInfo 'void (void)' inline noexcept-unevaluated 0x18cf790
+|   | `-CompoundStmt 0x18cfa30 <col:8>
+|   `-CXXConstructorDecl 0x18cf890 <col:8> S_DrawInfo 'void (const struct geo_render::S_DrawInfo &)' inline noexcept-unevaluated 0x18cf890
+|     `-ParmVarDecl 0x18cf9d0 <col:8> 'const struct geo_render::S_DrawInfo &'
+|-NamespaceDecl 0x18ac2e0 prev 0x185e3d0 </home/caiiiycuk/emscripten-sdk/projects/rendering/librenderfactory/../librender/./glshader_lib.hpp:7:1, line:94:1> geo_render
+| |-original Namespace 0x185e3d0 'geo_render'
+| |-NamespaceDecl 0x18ac340 <line:9:1, line:20:1> error_codes
+| | |-VarDecl 0x18ac3b0 <line:11:1, col:30> SHADER_CREATE_OK 'const int'
+| | | `-IntegerLiteral 0x18ac408 <col:30> 'int' 0
+| | |-VarDecl 0x18ac490 <line:12:1, col:41> SHADER_CREATE_ERROR_PROGRAM 'const int'
+| | | `-IntegerLiteral 0x18ac4e8 <col:41> 'int' 1
+| | |-VarDecl 0x18ac570 <line:13:1, col:40> SHADER_CREATE_ERROR_VERTEX 'const int'
+| | | `-IntegerLiteral 0x18ac5c8 <col:40> 'int' 2
+| | |-VarDecl 0x18ac650 <line:14:1, col:42> SHADER_CREATE_ERROR_FRAGMENT 'const int'
+| | | `-IntegerLiteral 0x18b3620 <col:42> 'int' 3
+| | |-VarDecl 0x18b36a0 <line:15:1, col:46> SHADER_CREATE_ERROR_VERT_COMPILE 'const int'
+| | | `-IntegerLiteral 0x18b36f8 <col:46> 'int' 4
+| | |-VarDecl 0x18b3780 <line:16:1, col:46> SHADER_CREATE_ERROR_FRAG_COMPILE 'const int'
+| | | `-IntegerLiteral 0x18b37d8 <col:46> 'int' 5
+| | |-VarDecl 0x18b3860 <line:17:1, col:38> SHADER_CREATE_ERROR_LINK 'const int'
+| | | `-IntegerLiteral 0x18b38b8 <col:38> 'int' 6
+| | `-VarDecl 0x18b3940 <line:18:1, col:43> SHADER_CREATE_ERROR_LOCATIONS 'const int'
+| |   `-IntegerLiteral 0x18b3998 <col:43> 'int' 7
+| |-CXXRecordDecl 0x18b3a10 <line:22:1, line:25:1> struct S_ShaderLocation definition
+| | |-CXXRecordDecl 0x18b3b20 <line:22:1, col:8> struct S_ShaderLocation
+| | |-CXXConstructorDecl 0x18da1e0 <col:8> S_ShaderLocation 'void (void)' inline noexcept-unevaluated 0x18da1e0
+| | `-CXXConstructorDecl 0x18da310 <col:8> S_ShaderLocation 'void (const struct geo_render::S_ShaderLocation &) throw()' inline
+| |   |-ParmVarDecl 0x18da450 <col:8> 'const struct geo_render::S_ShaderLocation &'
+| |   `-CompoundStmt 0x18da4b0 <col:8>
+| |-EnumDecl 0x18b3bb0 <line:27:1, line:36:1> E_UniformName
+| | |-EnumConstantDecl 0x18b3c60 <line:28:5> un_uniform_model_projection_matrix 'enum geo_render::E_UniformName'
+| | |-EnumConstantDecl 0x18b3cb0 <line:29:5> un_uniform_model_view_matrix 'enum geo_render::E_UniformName'
+| | |-EnumConstantDecl 0x18b3d00 <line:30:5> un_uniform_model_view_projection_matrix 'enum geo_render::E_UniformName'
+| | |-EnumConstantDecl 0x18b3d50 <line:31:5> un_uniform_normal_matrix 'enum geo_render::E_UniformName'
+| | |-EnumConstantDecl 0x18b3da0 <line:32:5> un_uniform_color 'enum geo_render::E_UniformName'
+| | |-EnumConstantDecl 0x18b3df0 <line:33:5> un_uniform_camera_target 'enum geo_render::E_UniformName'
+| | |-EnumConstantDecl 0x18b3e40 <line:34:5> un_uniform_camera_eye 'enum geo_render::E_UniformName'
+| | `-EnumConstantDecl 0x18b3e90 <line:35:5> un_uniform_vertex_offset 'enum geo_render::E_UniformName'
+| |-EnumDecl 0x18b3ee0 <line:38:1, line:43:1> E_AttribName
+| | |-EnumConstantDecl 0x18b3f90 <line:39:5> an_attrib_vertex 'enum geo_render::E_AttribName'
+| | |-EnumConstantDecl 0x18b3fe0 <line:40:5> an_attrib_texcoord 'enum geo_render::E_AttribName'
+| | |-EnumConstantDecl 0x18b4030 <line:41:5> an_attrib_normal 'enum geo_render::E_AttribName'
+| | `-EnumConstantDecl 0x18b4080 <line:42:5> an_attrib_color 'enum geo_render::E_AttribName'
+| `-CXXRecordDecl 0x18b40d0 <line:45:1, line:92:1> class C_GLShader definition invalid
+|   |-CXXRecordDecl 0x18b41e0 <line:45:1, col:7> class C_GLShader
+|   |-AccessSpecDecl 0x18b4270 <line:46:1, col:7> public
+|   |-CXXConstructorDecl 0x18b4310 <line:47:5, col:16> C_GLShader 'void (void)'
+|   |-CXXDestructorDecl 0x18b4420 <line:48:5, col:17> ~C_GLShader 'void (void)'
+|   |-CXXMethodDecl 0x18b44f0 <line:50:5, col:16> reset 'void (void)'
+|   |-CXXMethodDecl 0x18b6c60 <line:51:5, col:49> setFragmentShader 'void (int)'
+|   | `-ParmVarDecl 0x18b45a0 <col:28, col:35> fragmentShader 'int' invalid invalid
+|   |-CXXMethodDecl 0x18b6d60 <line:52:5, col:32> getFragmentShader 'int (void) const' invalid
+|   |-CXXMethodDecl 0x18b6e90 <line:53:5, col:45> setVertexShader 'void (int)'
+|   | `-ParmVarDecl 0x18b6e10 <col:26, col:33> vertexShader 'int' invalid invalid
+|   |-CXXMethodDecl 0x18b6f60 <line:54:5, col:30> getVertexShader 'int (void) const' invalid
+|   |-CXXMethodDecl 0x18b7090 <line:55:5, col:47> setShaderProgram 'void (int)'
+|   | `-ParmVarDecl 0x18b7010 <col:27, col:34> shaderProgram 'int' invalid invalid
+|   |-CXXMethodDecl 0x18b7160 <line:56:5, col:31> getShaderProgram 'int (void) const' invalid
+|   |-CXXMethodDecl 0x18b7300 <line:57:5, col:51> createVertexProgram 'int (const char *)'
+|   | `-ParmVarDecl 0x18b7240 <col:29, col:41> vertex_str 'const char *'
+|   |-CXXMethodDecl 0x18b7440 <line:58:5, col:55> createFragmentProgram 'int (const char *)'
+|   | `-ParmVarDecl 0x18b73c0 <col:31, col:43> fragment_str 'const char *'
+|   |-CXXMethodDecl 0x18b7640 <line:59:5, col:64> create 'int (const char *, const char *)'
+|   | |-ParmVarDecl 0x18b7500 <col:16, col:28> vertex_str 'const char *'
+|   | `-ParmVarDecl 0x18b7570 <col:40, col:52> fragment_str 'const char *'
+|   |-CXXMethodDecl 0x18b7990 <line:60:5, line:62:44> createAuto 'int (const char *, const unsigned int, const char *, const unsigned int)'
+|   | |-ParmVarDecl 0x18b7700 <line:60:20, col:32> vertex_str 'const char *'
+|   | |-ParmVarDecl 0x18b7770 <line:61:13, col:32> vertex_len 'const unsigned int'
+|   | |-ParmVarDecl 0x18b77e0 <col:44, col:56> fragment_str 'const char *'
+|   | `-ParmVarDecl 0x18b7850 <line:62:13, col:32> fragment_len 'const unsigned int'
+|   |-CXXMethodDecl 0x18b7a70 <line:63:5, col:18> destroy 'void (void)'
+|   |-CXXMethodDecl 0x18b8070 <line:64:5, col:37> getLog 'String (const int)'
+|   | `-ParmVarDecl 0x18b7b40 <col:19, col:32> gl_id 'const int' invalid invalid
+|   |-CXXMethodDecl 0x18b81a0 <line:65:5, col:33> getLogFragmentShader 'String (void)'
+|   |-CXXMethodDecl 0x18b8260 <line:66:5, col:31> getLogVertexShader 'String (void)'
+|   |-CXXMethodDecl 0x18b8320 <line:67:5, col:26> getLogProgram 'String (void)'
+|   |-CXXMethodDecl 0x18b8530 <line:68:5, col:39> addUniform '_Bool (const String &)'
+|   | `-ParmVarDecl 0x18b8430 <col:21, col:35> name 'const String &'
+|   |-CXXMethodDecl 0x18b8670 <line:69:5, col:38> addAttrib '_Bool (const String &)'
+|   | `-ParmVarDecl 0x18b85f0 <col:20, col:34> name 'const String &'
+|   |-CXXMethodDecl 0x18b88b0 <line:70:5, line:71:43> setUniform '_Bool (const String &, const unsigned int)'
+|   | |-ParmVarDecl 0x18b8730 <line:70:21, col:35> name 'const String &'
+|   | `-ParmVarDecl 0x18b87a0 <line:71:13, col:32> array_index 'const unsigned int'
+|   |-CXXMethodDecl 0x18b8a70 <line:72:5, line:73:43> setAttrib '_Bool (const String &, const unsigned int)'
+|   | |-ParmVarDecl 0x18b8970 <line:72:20, col:34> name 'const String &'
+|   | `-ParmVarDecl 0x18b89e0 <line:73:13, col:32> array_index 'const unsigned int'
+|   |-CXXMethodDecl 0x18b8b70 <line:74:5, col:17> bind 'void (void) const'
+|   |-CXXMethodDecl 0x18b8c30 <line:75:5, col:19> unbind 'void (void) const'
+|   |-CXXMethodDecl 0x18b8de0 <line:76:5, col:57> getUniformLocation 'int (const int) const'
+|   | `-ParmVarDecl 0x18b8ce0 <col:31, col:44> array_index 'const int' invalid invalid
+|   |-CXXMethodDecl 0x18b8f20 <line:77:5, col:56> getAttribLocation 'int (const int) const'
+|   | `-ParmVarDecl 0x18b8ea0 <col:30, col:43> array_index 'const int' invalid invalid
+|   |-CXXMethodDecl 0x18b90e0 <line:78:5, col:53> getUniformName 'String (const int) const'
+|   | `-ParmVarDecl 0x18b9020 <col:27, col:40> array_index 'const int' invalid invalid
+|   |-CXXMethodDecl 0x18b9220 <line:79:5, col:52> getAttribName 'String (const int) const'
+|   | `-ParmVarDecl 0x18b91a0 <col:26, col:39> array_index 'const int' invalid invalid
+|   |-CXXMethodDecl 0x18b92f0 <line:80:5, col:31> getUniformsCount 'int (void) const' invalid
+|   |-CXXMethodDecl 0x18b93b0 <line:81:5, col:30> getAttribsCount 'int (void) const' invalid
+|   |-CXXMethodDecl 0x18b9560 <line:82:5, col:36> setName 'void (const String &)'
+|   | `-ParmVarDecl 0x18b9460 <col:18, col:32> name 'const String &'
+|   |-CXXMethodDecl 0x18b9690 <line:83:5, col:29> getName 'const String &(void) const'
+|   |-AccessSpecDecl 0x18b9730 <line:85:1, col:8> private
+|   |-FieldDecl 0x18b9770 <line:86:5, col:12> shaderProgram 'int' invalid
+|   |-FieldDecl 0x18b97d0 <line:87:5, col:12> vertexShader 'int' invalid
+|   |-FieldDecl 0x18b9830 <line:88:5, col:12> fragmentShader 'int' invalid
+|   |-FieldDecl 0x18b9890 <line:89:5, col:22> uniform 'struct geo_render::S_ShaderLocation'
+|   |-FieldDecl 0x18b98f0 <line:90:5, col:22> attrib 'struct geo_render::S_ShaderLocation'
+|   |-FieldDecl 0x18b9950 <line:91:5, col:12> name 'String':'int'
+|   `-CXXConstructorDecl 0x18d9690 <line:45:7> C_GLShader 'void (const class geo_render::C_GLShader &) throw()' inline
+|     |-ParmVarDecl 0x18d97d0 <col:7> 'const class geo_render::C_GLShader &'
+|     |-CXXCtorInitializer Field 0x18b9890 'uniform' 'struct geo_render::S_ShaderLocation'
+|     | |-CXXConstructExpr 0x18da508 <col:7> 'struct geo_render::S_ShaderLocation' 'void (const struct geo_render::S_ShaderLocation &) throw()'
+|     | | `-MemberExpr 0x18da178 <col:7> 'const struct geo_render::S_ShaderLocation' lvalue .uniform 0x18b9890
+|     | |   `-DeclRefExpr 0x18da150 <col:7> 'const class geo_render::C_GLShader' lvalue ParmVar 0x18d97d0 '' 'const class geo_render::C_GLShader &'
+|     |-CXXCtorInitializer Field 0x18b98f0 'attrib' 'struct geo_render::S_ShaderLocation'
+|     | |-CXXConstructExpr 0x18da5d8 <col:7> 'struct geo_render::S_ShaderLocation' 'void (const struct geo_render::S_ShaderLocation &) throw()'
+|     | | `-MemberExpr 0x18da590 <col:7> 'const struct geo_render::S_ShaderLocation' lvalue .attrib 0x18b98f0
+|     | |   `-DeclRefExpr 0x18da568 <col:7> 'const class geo_render::C_GLShader' lvalue ParmVar 0x18d97d0 '' 'const class geo_render::C_GLShader &'
+|     |-CXXCtorInitializer Field 0x18b9950 'name' 'String':'int'
+|     | |-ImplicitCastExpr 0x18da6a8 <col:7> 'String':'int' <LValueToRValue>
+|     | | `-MemberExpr 0x18da660 <col:7> 'const String':'const int' lvalue .name 0x18b9950
+|     | |   `-DeclRefExpr 0x18da638 <col:7> 'const class geo_render::C_GLShader' lvalue ParmVar 0x18d97d0 '' 'const class geo_render::C_GLShader &'
+|     `-CompoundStmt 0x18da700 <col:7>
+|-NamespaceDecl 0x18b99a0 prev 0x18ac2e0 </home/caiiiycuk/emscripten-sdk/projects/rendering/librenderfactory/../librender/glrender_lib.hpp:8:1, line:24:1> geo_render
+| |-original Namespace 0x185e3d0 'geo_render'
+| `-CXXRecordDecl 0x18b9a00 <line:10:1, line:22:1> class C_GLRender definition
+|   |-CXXRecordDecl 0x18b9b10 <line:10:1, col:7> class C_GLRender
+|   |-AccessSpecDecl 0x18b9ba0 <line:11:1, col:7> public
+|   |-CXXConstructorDecl 0x18b9c10 <line:12:5, col:16> C_GLRender 'void (void)'
+|   |-CXXDestructorDecl 0x18b9d20 <line:13:5, col:17> ~C_GLRender 'void (void)'
+|   |-CXXMethodDecl 0x18ba890 <line:15:5, line:16:33> modelRender 'void (const struct geo_render::S_DrawInfo &, const struct geo_render::S_DrawData &, const class geo_render::C_GLShader &)'
+|   | |-ParmVarDecl 0x18b9e10 <line:15:22, col:40> info 'const struct geo_render::S_DrawInfo &'
+|   | |-ParmVarDecl 0x18b9eb0 <col:46, col:64> data 'const struct geo_render::S_DrawData &'
+|   | `-ParmVarDecl 0x18b9f50 <line:16:13, col:31> sh 'const class geo_render::C_GLShader &'
+|   |-CXXMethodDecl 0x18ba9e0 <line:17:5, col:39> isErrorGL '_Bool (const int &)'
+|   | `-ParmVarDecl 0x18ba960 <col:20, col:31> gl_error 'const int &'
+|   |-CXXMethodDecl 0x18baae0 <line:18:5, col:20> isErrorGL '_Bool (void)'
+|   |-AccessSpecDecl 0x18bab80 <line:20:1, col:8> private
+|   |-CXXMethodDecl 0x18bac80 <line:21:5, col:43> bufferDraw 'void (const struct geo_render::S_DrawData &)'
+|   | `-ParmVarDecl 0x18babc0 <col:21, col:39> data 'const struct geo_render::S_DrawData &'
+|   `-CXXConstructorDecl 0x18cf3b0 <line:10:7> C_GLRender 'void (const class geo_render::C_GLRender &)' inline noexcept-unevaluated 0x18cf3b0
+|     `-ParmVarDecl 0x18cf4f0 <col:7> 'const class geo_render::C_GLRender &'
+|-NamespaceDecl 0x18bad30 prev 0x18b99a0 </home/caiiiycuk/emscripten-sdk/projects/rendering/librenderfactory/../librender/glcamera.hpp:7:1, line:60:1> geo_render
+| |-original Namespace 0x185e3d0 'geo_render'
+| `-CXXRecordDecl 0x18bad90 <line:9:1, line:58:1> class C_GLCamera definition
+|   |-CXXRecordDecl 0x18baea0 <line:9:1, col:7> class C_GLCamera
+|   |-AccessSpecDecl 0x18baf30 <line:10:1, col:7> public
+|   |-CXXConstructorDecl 0x18bafa0 <line:11:5, col:16> C_GLCamera 'void (void)'
+|   |-CXXDestructorDecl 0x18bb0b0 <line:12:5, col:17> ~C_GLCamera 'void (void)'
+|   |-CXXMethodDecl 0x18bb510 <line:14:5, line:15:44> initializeOrtho 'void (float, float, Vec3, Vec3, int, int)'
+|   | |-ParmVarDecl 0x18bb170 <line:14:26, col:32> min_plane 'float'
+|   | |-ParmVarDecl 0x18bb1e0 <col:43, col:49> max_plane 'float'
+|   | |-ParmVarDecl 0x18bb250 <col:60, col:65> target 'Vec3':'int'
+|   | |-ParmVarDecl 0x18bb2c0 <line:15:13, col:18> eye 'Vec3':'int'
+|   | |-ParmVarDecl 0x18bb330 <col:23, col:27> width 'int'
+|   | `-ParmVarDecl 0x18bb3a0 <col:34, col:38> height 'int'
+|   |-CXXMethodDecl 0x18bb730 <line:16:5, col:43> resizeOrtho 'void (int, int)'
+|   | |-ParmVarDecl 0x18bb5f0 <col:22, col:26> width 'int'
+|   | `-ParmVarDecl 0x18bb660 <col:33, col:37> height 'int'
+|   |-CXXMethodDecl 0x18bc060 <line:17:5, col:58> setMinMaxPlanes 'void (float, float)'
+|   | |-ParmVarDecl 0x18bbf20 <col:26, col:32> min_plane 'float'
+|   | `-ParmVarDecl 0x18bbf90 <col:43, col:49> max_plane 'float'
+|   |-CXXMethodDecl 0x18bc210 <line:18:5, col:38> setTarget 'void (const Vec3 &)'
+|   | `-ParmVarDecl 0x18bc150 <col:20, col:32> target 'const Vec3 &'
+|   |-CXXMethodDecl 0x18bc350 <line:19:5, col:32> setEye 'void (const Vec3 &)'
+|   | `-ParmVarDecl 0x18bc2d0 <col:17, col:29> eye 'const Vec3 &'
+|   |-CXXMethodDecl 0x18bc590 <line:20:5, col:57> setPosition 'void (const Vec3 &, const Vec3 &)'
+|   | |-ParmVarDecl 0x18bc410 <col:22, col:34> target 'const Vec3 &'
+|   | `-ParmVarDecl 0x18bc480 <col:42, col:54> eye 'const Vec3 &'
+|   |-CXXMethodDecl 0x18bc6d0 <line:21:5, col:36> setScale 'void (const Vec3 &)'
+|   | `-ParmVarDecl 0x18bc650 <col:19, col:31> scale 'const Vec3 &'
+|   |-CXXMethodDecl 0x18bc810 <line:22:5, col:39> moveTarget 'void (const Vec3 &)'
+|   | `-ParmVarDecl 0x18bc790 <col:21, col:33> offset 'const Vec3 &'
+|   |-CXXMethodDecl 0x18bc950 <line:23:5, col:36> moveEye 'void (const Vec3 &)'
+|   | `-ParmVarDecl 0x18bc8d0 <col:18, col:30> offset 'const Vec3 &'
+|   |-CXXMethodDecl 0x18bca90 <line:24:5, col:39> moveCamera 'void (const Vec3 &)'
+|   | `-ParmVarDecl 0x18bca10 <col:21, col:33> offset 'const Vec3 &'
+|   |-CXXMethodDecl 0x18bcb60 <line:25:5, col:21> getHeight 'int (void) const'
+|   |-CXXMethodDecl 0x18bcc20 <line:26:5, col:20> getWidth 'int (void) const'
+|   |-CXXMethodDecl 0x18bcd10 <line:27:5, col:25> getMaxPlane 'float (void) const'
+|   |-CXXMethodDecl 0x18bcdd0 <line:28:5, col:25> getMinPlane 'float (void) const'
+|   |-CXXMethodDecl 0x18bdf40 <line:29:5, col:28> getScale 'const Vec3 &(void) const'
+|   |-CXXMethodDecl 0x18be000 <line:30:5, col:26> getEye 'const Vec3 &(void) const'
+|   |-CXXMethodDecl 0x18be0c0 <line:31:5, col:29> getTarget 'const Vec3 &(void) const'
+|   |-CXXMethodDecl 0x18be1e0 <line:32:5, col:34> getScaleMatrix 'const Mat4 &(void) const'
+|   |-CXXMethodDecl 0x18be2a0 <line:33:5, col:33> getViewMatrix 'const Mat4 &(void) const'
+|   |-CXXMethodDecl 0x18be360 <line:34:5, col:39> getProjectionMatrix 'const Mat4 &(void) const'
+|   |-CXXMethodDecl 0x18be420 <line:35:5, col:35> getCameraMatrix 'const Mat4 &(void) const'
+|   |-CXXMethodDecl 0x18be540 <line:36:5, col:35> getNormalMatrix 'const Mat3 &(void) const'
+|   |-AccessSpecDecl 0x18be5e0 <line:38:1, col:8> private
+|   |-CXXMethodDecl 0x18be630 <line:39:5, col:25> makeViewMatrix 'void (void)'
+|   |-CXXMethodDecl 0x18be6f0 <line:40:5, col:31> makeProjectionMatrix 'void (void)'
+|   |-CXXMethodDecl 0x18be7b0 <line:41:5, col:26> makeScaleMatrix 'void (void)'
+|   |-CXXMethodDecl 0x18be870 <line:42:5, col:29> makeCompleteMatrix 'void (void)'
+|   |-CXXMethodDecl 0x18be930 <line:43:5, col:27> makeNormalMatrix 'void (void)'
+|   |-FieldDecl 0x18be9e0 <line:45:5, col:10> projectionMat 'Mat4':'int'
+|   |-FieldDecl 0x18bea40 <line:46:5, col:10> viewMat 'Mat4':'int'
+|   |-FieldDecl 0x18beaa0 <line:47:5, col:10> scaleMat 'Mat4':'int'
+|   |-FieldDecl 0x18beb00 <line:48:5, col:10> completeProjectionViewMat 'Mat4':'int'
+|   |-FieldDecl 0x18beb60 <line:49:5, col:10> normalMatrix 'Mat3':'int'
+|   |-FieldDecl 0x18bebc0 <line:50:5, col:10> targetVec 'Vec3':'int'
+|   |-FieldDecl 0x18bec20 <line:51:5, col:10> eyeVec 'Vec3':'int'
+|   |-FieldDecl 0x18bec80 <line:52:5, col:10> upVec 'Vec3':'int'
+|   |-FieldDecl 0x18bece0 <line:53:5, col:10> scaleSize 'Vec3':'int'
+|   |-FieldDecl 0x18bed40 <line:54:5, col:11> minPlane 'float'
+|   |-FieldDecl 0x18beda0 <line:55:5, col:11> maxPlane 'float'
+|   |-FieldDecl 0x18bee00 <line:56:5, col:9> screenWidth 'int'
+|   |-FieldDecl 0x18bee60 <line:57:5, col:9> screenHeight 'int'
+|   |-CXXConstructorDecl 0x18cf5b0 <line:9:7> C_GLCamera 'void (const class geo_render::C_GLCamera &)' inline noexcept-unevaluated 0x18cf5b0
+|   | `-ParmVarDecl 0x18cf6b0 <col:7> 'const class geo_render::C_GLCamera &'
+|   `-CXXMethodDecl 0x18d2f50 <col:7> operator= 'class geo_render::C_GLCamera &(const class geo_render::C_GLCamera &) throw()' inline
+|     |-ParmVarDecl 0x18d3070 <col:7> 'const class geo_render::C_GLCamera &'
+|     `-CompoundStmt 0x18d40f0 <col:7>
+|       |-BinaryOperator 0x18d31d8 <col:7> 'Mat4':'int' lvalue '='
+|       | |-MemberExpr 0x18d3190 <col:7> 'Mat4':'int' lvalue ->projectionMat 0x18be9e0
+|       | | `-CXXThisExpr 0x18d3178 <col:7> 'class geo_render::C_GLCamera *' this
+|       | `-ImplicitCastExpr 0x18d31c0 <col:7> 'Mat4':'int' <LValueToRValue>
+|       |   `-MemberExpr 0x18d3148 <col:7> 'const Mat4':'const int' lvalue .projectionMat 0x18be9e0
+|       |     `-DeclRefExpr 0x18d3120 <col:7> 'const class geo_render::C_GLCamera' lvalue ParmVar 0x18d3070 '' 'const class geo_render::C_GLCamera &'
+|       |-BinaryOperator 0x18d32b8 <col:7> 'Mat4':'int' lvalue '='
+|       | |-MemberExpr 0x18d3270 <col:7> 'Mat4':'int' lvalue ->viewMat 0x18bea40
+|       | | `-CXXThisExpr 0x18d3258 <col:7> 'class geo_render::C_GLCamera *' this
+|       | `-ImplicitCastExpr 0x18d32a0 <col:7> 'Mat4':'int' <LValueToRValue>
+|       |   `-MemberExpr 0x18d3228 <col:7> 'const Mat4':'const int' lvalue .viewMat 0x18bea40
+|       |     `-DeclRefExpr 0x18d3200 <col:7> 'const class geo_render::C_GLCamera' lvalue ParmVar 0x18d3070 '' 'const class geo_render::C_GLCamera &'
+|       |-BinaryOperator 0x18d3398 <col:7> 'Mat4':'int' lvalue '='
+|       | |-MemberExpr 0x18d3350 <col:7> 'Mat4':'int' lvalue ->scaleMat 0x18beaa0
+|       | | `-CXXThisExpr 0x18d3338 <col:7> 'class geo_render::C_GLCamera *' this
+|       | `-ImplicitCastExpr 0x18d3380 <col:7> 'Mat4':'int' <LValueToRValue>
+|       |   `-MemberExpr 0x18d3308 <col:7> 'const Mat4':'const int' lvalue .scaleMat 0x18beaa0
+|       |     `-DeclRefExpr 0x18d32e0 <col:7> 'const class geo_render::C_GLCamera' lvalue ParmVar 0x18d3070 '' 'const class geo_render::C_GLCamera &'
+|       |-BinaryOperator 0x18d3478 <col:7> 'Mat4':'int' lvalue '='
+|       | |-MemberExpr 0x18d3430 <col:7> 'Mat4':'int' lvalue ->completeProjectionViewMat 0x18beb00
+|       | | `-CXXThisExpr 0x18d3418 <col:7> 'class geo_render::C_GLCamera *' this
+|       | `-ImplicitCastExpr 0x18d3460 <col:7> 'Mat4':'int' <LValueToRValue>
+|       |   `-MemberExpr 0x18d33e8 <col:7> 'const Mat4':'const int' lvalue .completeProjectionViewMat 0x18beb00
+|       |     `-DeclRefExpr 0x18d33c0 <col:7> 'const class geo_render::C_GLCamera' lvalue ParmVar 0x18d3070 '' 'const class geo_render::C_GLCamera &'
+|       |-BinaryOperator 0x18d3558 <col:7> 'Mat3':'int' lvalue '='
+|       | |-MemberExpr 0x18d3510 <col:7> 'Mat3':'int' lvalue ->normalMatrix 0x18beb60
+|       | | `-CXXThisExpr 0x18d34f8 <col:7> 'class geo_render::C_GLCamera *' this
+|       | `-ImplicitCastExpr 0x18d3540 <col:7> 'Mat3':'int' <LValueToRValue>
+|       |   `-MemberExpr 0x18d34c8 <col:7> 'const Mat3':'const int' lvalue .normalMatrix 0x18beb60
+|       |     `-DeclRefExpr 0x18d34a0 <col:7> 'const class geo_render::C_GLCamera' lvalue ParmVar 0x18d3070 '' 'const class geo_render::C_GLCamera &'
+|       |-BinaryOperator 0x18d3638 <col:7> 'Vec3':'int' lvalue '='
+|       | |-MemberExpr 0x18d35f0 <col:7> 'Vec3':'int' lvalue ->targetVec 0x18bebc0
+|       | | `-CXXThisExpr 0x18d35d8 <col:7> 'class geo_render::C_GLCamera *' this
+|       | `-ImplicitCastExpr 0x18d3620 <col:7> 'Vec3':'int' <LValueToRValue>
+|       |   `-MemberExpr 0x18d35a8 <col:7> 'const Vec3':'const int' lvalue .targetVec 0x18bebc0
+|       |     `-DeclRefExpr 0x18d3580 <col:7> 'const class geo_render::C_GLCamera' lvalue ParmVar 0x18d3070 '' 'const class geo_render::C_GLCamera &'
+|       |-BinaryOperator 0x18d3718 <col:7> 'Vec3':'int' lvalue '='
+|       | |-MemberExpr 0x18d36d0 <col:7> 'Vec3':'int' lvalue ->eyeVec 0x18bec20
+|       | | `-CXXThisExpr 0x18d36b8 <col:7> 'class geo_render::C_GLCamera *' this
+|       | `-ImplicitCastExpr 0x18d3700 <col:7> 'Vec3':'int' <LValueToRValue>
+|       |   `-MemberExpr 0x18d3688 <col:7> 'const Vec3':'const int' lvalue .eyeVec 0x18bec20
+|       |     `-DeclRefExpr 0x18d3660 <col:7> 'const class geo_render::C_GLCamera' lvalue ParmVar 0x18d3070 '' 'const class geo_render::C_GLCamera &'
+|       |-BinaryOperator 0x18d37f8 <col:7> 'Vec3':'int' lvalue '='
+|       | |-MemberExpr 0x18d37b0 <col:7> 'Vec3':'int' lvalue ->upVec 0x18bec80
+|       | | `-CXXThisExpr 0x18d3798 <col:7> 'class geo_render::C_GLCamera *' this
+|       | `-ImplicitCastExpr 0x18d37e0 <col:7> 'Vec3':'int' <LValueToRValue>
+|       |   `-MemberExpr 0x18d3768 <col:7> 'const Vec3':'const int' lvalue .upVec 0x18bec80
+|       |     `-DeclRefExpr 0x18d3740 <col:7> 'const class geo_render::C_GLCamera' lvalue ParmVar 0x18d3070 '' 'const class geo_render::C_GLCamera &'
+|       |-BinaryOperator 0x18d3cf0 <col:7> 'Vec3':'int' lvalue '='
+|       | |-MemberExpr 0x18d3890 <col:7> 'Vec3':'int' lvalue ->scaleSize 0x18bece0
+|       | | `-CXXThisExpr 0x18d3878 <col:7> 'class geo_render::C_GLCamera *' this
+|       | `-ImplicitCastExpr 0x18d38c0 <col:7> 'Vec3':'int' <LValueToRValue>
+|       |   `-MemberExpr 0x18d3848 <col:7> 'const Vec3':'const int' lvalue .scaleSize 0x18bece0
+|       |     `-DeclRefExpr 0x18d3820 <col:7> 'const class geo_render::C_GLCamera' lvalue ParmVar 0x18d3070 '' 'const class geo_render::C_GLCamera &'
+|       |-BinaryOperator 0x18d3dd0 <col:7> 'float' lvalue '='
+|       | |-MemberExpr 0x18d3d88 <col:7> 'float' lvalue ->minPlane 0x18bed40
+|       | | `-CXXThisExpr 0x18d3d70 <col:7> 'class geo_render::C_GLCamera *' this
+|       | `-ImplicitCastExpr 0x18d3db8 <col:7> 'float' <LValueToRValue>
+|       |   `-MemberExpr 0x18d3d40 <col:7> 'const float' lvalue .minPlane 0x18bed40
+|       |     `-DeclRefExpr 0x18d3d18 <col:7> 'const class geo_render::C_GLCamera' lvalue ParmVar 0x18d3070 '' 'const class geo_render::C_GLCamera &'
+|       |-BinaryOperator 0x18d3eb0 <col:7> 'float' lvalue '='
+|       | |-MemberExpr 0x18d3e68 <col:7> 'float' lvalue ->maxPlane 0x18beda0
+|       | | `-CXXThisExpr 0x18d3e50 <col:7> 'class geo_render::C_GLCamera *' this
+|       | `-ImplicitCastExpr 0x18d3e98 <col:7> 'float' <LValueToRValue>
+|       |   `-MemberExpr 0x18d3e20 <col:7> 'const float' lvalue .maxPlane 0x18beda0
+|       |     `-DeclRefExpr 0x18d3df8 <col:7> 'const class geo_render::C_GLCamera' lvalue ParmVar 0x18d3070 '' 'const class geo_render::C_GLCamera &'
+|       |-BinaryOperator 0x18d3f90 <col:7> 'int' lvalue '='
+|       | |-MemberExpr 0x18d3f48 <col:7> 'int' lvalue ->screenWidth 0x18bee00
+|       | | `-CXXThisExpr 0x18d3f30 <col:7> 'class geo_render::C_GLCamera *' this
+|       | `-ImplicitCastExpr 0x18d3f78 <col:7> 'int' <LValueToRValue>
+|       |   `-MemberExpr 0x18d3f00 <col:7> 'const int' lvalue .screenWidth 0x18bee00
+|       |     `-DeclRefExpr 0x18d3ed8 <col:7> 'const class geo_render::C_GLCamera' lvalue ParmVar 0x18d3070 '' 'const class geo_render::C_GLCamera &'
+|       |-BinaryOperator 0x18d4070 <col:7> 'int' lvalue '='
+|       | |-MemberExpr 0x18d4028 <col:7> 'int' lvalue ->screenHeight 0x18bee60
+|       | | `-CXXThisExpr 0x18d4010 <col:7> 'class geo_render::C_GLCamera *' this
+|       | `-ImplicitCastExpr 0x18d4058 <col:7> 'int' <LValueToRValue>
+|       |   `-MemberExpr 0x18d3fe0 <col:7> 'const int' lvalue .screenHeight 0x18bee60
+|       |     `-DeclRefExpr 0x18d3fb8 <col:7> 'const class geo_render::C_GLCamera' lvalue ParmVar 0x18d3070 '' 'const class geo_render::C_GLCamera &'
+|       `-ReturnStmt 0x18d40d0 <col:7>
+|         `-UnaryOperator 0x18d40b0 <col:7> 'class geo_render::C_GLCamera' lvalue prefix '*'
+|           `-CXXThisExpr 0x18d4098 <col:7> 'class geo_render::C_GLCamera *' this
+|-NamespaceDecl 0x18beeb0 prev 0x18bad30 </home/caiiiycuk/emscripten-sdk/projects/rendering/librenderfactory/../libparsersld/./geolayer_lib.hpp:9:1, line:72:1> geo_render
+| |-original Namespace 0x185e3d0 'geo_render'
+| |-CXXRecordDecl 0x18c0040 <line:11:1, line:14:1> struct S_LayerProperty definition
+| | |-CXXRecordDecl 0x18c0150 <line:11:1, col:8> struct S_LayerProperty
+| | |-FieldDecl 0x18c01f0 <line:12:5, col:12> name 'String':'int'
+| | `-FieldDecl 0x18c0250 <line:13:5, col:12> value 'String':'int'
+| `-CXXRecordDecl 0x18c02a0 <line:16:1, line:70:1> class C_GeoLayer definition
+|   |-CXXRecordDecl 0x18c03b0 <line:16:1, col:7> class C_GeoLayer
+|   |-AccessSpecDecl 0x18c0440 <line:17:1, col:7> public
+|   |-CXXConstructorDecl 0x18c04b0 <line:18:5, col:16> C_GeoLayer 'void (void)'
+|   |-CXXDestructorDecl 0x18c05c0 <line:19:5, col:17> ~C_GeoLayer 'void (void)'
+|   |-CXXMethodDecl 0x18c0690 <line:21:5, col:16> reset 'void (void)'
+|   |-CXXMethodDecl 0x18c07d0 <line:22:5, col:57> setProperties 'void (const int &)'
+|   | `-ParmVarDecl 0x18c0750 <col:24, col:46> named_layer 'const int &' invalid invalid
+|   |-CXXMethodDecl 0x18c0950 <line:23:5, col:50> setStrokeDasharray 'void (float)'
+|   | `-ParmVarDecl 0x18c0890 <col:29, col:35> strokeDasharray 'float'
+|   |-CXXMethodDecl 0x18c0a20 <line:24:5, col:32> getStrokeDasharray 'float (void) const'
+|   |-CXXMethodDecl 0x18c0b50 <line:25:5, col:42> setStrokeWidth 'void (float)'
+|   | `-ParmVarDecl 0x18c0ad0 <col:25, col:31> strokeWidth 'float'
+|   |-CXXMethodDecl 0x18c0c20 <line:26:5, col:28> getStrokeWidth 'float (void) const'
+|   |-CXXMethodDecl 0x18c0dc0 <line:27:5, col:48> setStrokeColor 'void (const Vec4 &)'
+|   | `-ParmVarDecl 0x18c0d00 <col:25, col:37> strokeColor 'const Vec4 &'
+|   |-CXXMethodDecl 0x18c0ec0 <line:28:5, col:27> getStrokeColor 'Vec4 (void) const'
+|   |-CXXMethodDecl 0x18c1870 <line:29:5, col:44> setFillColor 'void (const Vec4 &)'
+|   | `-ParmVarDecl 0x18c0f70 <col:23, col:35> fillColor 'const Vec4 &'
+|   |-CXXMethodDecl 0x18c1940 <line:30:5, col:25> getFillColor 'Vec4 (void) const'
+|   |-CXXMethodDecl 0x18c1a70 <line:31:5, col:66> setMaxLabelScaleDenominator 'void (int)'
+|   | `-ParmVarDecl 0x18c19f0 <col:38, col:42> maxLabelScaleDenominator 'int'
+|   |-CXXMethodDecl 0x18c1b40 <line:32:5, col:39> getMaxLabelScaleDenominator 'int (void) const'
+|   |-CXXMethodDecl 0x18c1c70 <line:33:5, col:66> setMinLabelScaleDenominator 'void (int)'
+|   | `-ParmVarDecl 0x18c1bf0 <col:38, col:42> minLabelScaleDenominator 'int'
+|   |-CXXMethodDecl 0x18c1d40 <line:34:5, col:39> getMinLabelScaleDenominator 'int (void) const'
+|   |-CXXMethodDecl 0x18c1e70 <line:35:5, col:30> setZOrder 'void (int)'
+|   | `-ParmVarDecl 0x18c1df0 <col:20, col:24> zOrder 'int'
+|   |-CXXMethodDecl 0x18c1f40 <line:36:5, col:21> getZOrder 'int (void) const'
+|   |-CXXMethodDecl 0x18c2070 <line:37:5, col:48> setGeometryLayerId 'void (int)'
+|   | `-ParmVarDecl 0x18c1ff0 <col:29, col:33> geometryLayerId 'int'
+|   |-CXXMethodDecl 0x18c2140 <line:38:5, col:30> getGeometryLayerId 'int (void) const'
+|   |-CXXMethodDecl 0x18c22b0 <line:39:5, col:31> setView3d 'void (_Bool)'
+|   | `-ParmVarDecl 0x18c21f0 <col:20, col:25> view3d '_Bool'
+|   |-CXXMethodDecl 0x18c23b0 <line:40:5, col:21> isView3d '_Bool (void) const'
+|   |-CXXMethodDecl 0x18c24e0 <line:41:5, col:37> setDirection 'void (_Bool)'
+|   | `-ParmVarDecl 0x18c2460 <col:23, col:28> direction '_Bool'
+|   |-CXXMethodDecl 0x18c25b0 <line:42:5, col:24> isDirection '_Bool (void) const'
+|   |-CXXMethodDecl 0x18c26e0 <line:43:5, col:39> setSelectable 'void (_Bool)'
+|   | `-ParmVarDecl 0x18c2660 <col:24, col:29> selectable '_Bool'
+|   |-CXXMethodDecl 0x18c27b0 <line:44:5, col:25> isSelectable '_Bool (void) const'
+|   |-CXXMethodDecl 0x18c3d20 <line:45:5, col:43> setAntialiasing 'void (_Bool)'
+|   | `-ParmVarDecl 0x18c3ca0 <col:26, col:31> antialiasing '_Bool'
+|   |-CXXMethodDecl 0x18c3df0 <line:46:5, col:27> isAntialiasing '_Bool (void) const'
+|   |-CXXMethodDecl 0x18c3f20 <line:47:5, col:46> setDecorator 'void (const String &)'
+|   | `-ParmVarDecl 0x18c3ea0 <col:23, col:37> decorator 'const String &'
+|   |-CXXMethodDecl 0x18c4020 <line:48:5, col:27> getDecorator 'String (void) const'
+|   |-CXXMethodDecl 0x18c4150 <line:49:5, col:46> setStyleName 'void (const String &)'
+|   | `-ParmVarDecl 0x18c40d0 <col:23, col:37> styleName 'const String &'
+|   |-CXXMethodDecl 0x18c4220 <line:50:5, col:27> getStyleName 'String (void) const'
+|   |-CXXMethodDecl 0x18c4350 <line:51:5, col:36> setName 'void (const String &)'
+|   | `-ParmVarDecl 0x18c42d0 <col:18, col:32> name 'const String &'
+|   |-CXXMethodDecl 0x18c4420 <line:52:5, col:22> getName 'String (void) const'
+|   |-AccessSpecDecl 0x18c44c0 <line:54:1, col:8> private
+|   |-FieldDecl 0x18c4500 <line:55:5, col:12> name 'String':'int'
+|   |-FieldDecl 0x18c4560 <line:56:5, col:12> styleName 'String':'int'
+|   |-FieldDecl 0x18c45c0 <line:57:5, col:12> decorator 'String':'int'
+|   |-FieldDecl 0x18c4620 <line:58:5, col:10> antialiasing '_Bool'
+|   |-FieldDecl 0x18c4680 <line:59:5, col:10> selectable '_Bool'
+|   |-FieldDecl 0x18c46e0 <line:60:5, col:10> direction '_Bool'
+|   |-FieldDecl 0x18c4740 <line:61:5, col:10> view3d '_Bool'
+|   |-FieldDecl 0x18c47a0 <line:62:5, col:9> geometryLayerId 'int'
+|   |-FieldDecl 0x18c4800 <line:63:5, col:9> zOrder 'int'
+|   |-FieldDecl 0x18c4860 <line:64:5, col:9> minLabelScaleDenominator 'int'
+|   |-FieldDecl 0x18c48c0 <line:65:5, col:9> maxLabelScaleDenominator 'int'
+|   |-FieldDecl 0x18c4920 <line:66:5, col:10> fillColor 'Vec4':'int'
+|   |-FieldDecl 0x18c4980 <line:67:5, col:10> strokeColor 'Vec4':'int'
+|   |-FieldDecl 0x18c49e0 <line:68:5, col:11> strokeWidth 'float'
+|   `-FieldDecl 0x18c4a40 <line:69:5, col:11> strokeDasharray 'float'
+|-NamespaceDecl 0x18c4a90 prev 0x18beeb0 </home/caiiiycuk/emscripten-sdk/projects/rendering/librenderfactory/../libparsersld/geolayers_lib.hpp:11:1, line:28:1> geo_render
+| |-original Namespace 0x185e3d0 'geo_render'
+| `-CXXRecordDecl 0x18c4af0 <line:13:1, line:26:1> class C_GeoLayersList definition
+|   |-CXXRecordDecl 0x18c4c00 <line:13:1, col:7> class C_GeoLayersList
+|   |-AccessSpecDecl 0x18c54c0 <line:14:1, col:7> public
+|   |-CXXConstructorDecl 0x18c5530 <line:15:5, col:21> C_GeoLayersList 'void (void)'
+|   |-CXXDestructorDecl 0x18c5640 <line:16:5, col:22> ~C_GeoLayersList 'void (void)'
+|   |-CXXMethodDecl 0x18c5710 <line:18:5, col:16> clear 'void (void)'
+|   |-CXXMethodDecl 0x18c58c0 <line:19:5, col:64> loadFromFile 'int (const String &)'
+|   | `-ParmVarDecl 0x18c57c0 <col:41, col:55> file_name 'const String &' invalid
+|   |-CXXMethodDecl 0x18c5a70 <line:20:5, col:40> getLayer 'const class geo_render::C_GeoLayer &(int) const'
+|   | `-ParmVarDecl 0x18c5980 <col:32, col:36> id 'int'
+|   |-CXXMethodDecl 0x18c5bf0 <line:21:5, col:32> isLayerExists '_Bool (int) const'
+|   | `-ParmVarDecl 0x18c5b30 <col:24, col:28> id 'int'
+|   |-CXXMethodDecl 0x18c5cc0 <line:22:5, col:29> getLayersCount 'int (void) const' invalid
+|   |-AccessSpecDecl 0x18c5d60 <line:24:1, col:8> private
+|   `-CXXConstructorDecl 0x18cf180 <line:13:7> C_GeoLayersList 'void (const class geo_render::C_GeoLayersList &)' inline noexcept-unevaluated 0x18cf180
+|     `-ParmVarDecl 0x18cf2c0 <col:7> 'const class geo_render::C_GeoLayersList &'
+|-NamespaceDecl 0x18c5d90 prev 0x18c4a90 </home/caiiiycuk/emscripten-sdk/projects/rendering/librenderfactory/./renderfactory_lib.hpp:13:1, line:67:1> geo_render
+| |-original Namespace 0x185e3d0 'geo_render'
+| |-CXXRecordDecl 0x18c5df0 <line:15:1, line:19:1> struct S_GeometryPolygons definition
+| | |-CXXRecordDecl 0x18c5f00 <line:15:1, col:8> struct S_GeometryPolygons
+| | |-CXXConstructorDecl 0x18cd800 <col:8> S_GeometryPolygons 'void (void)' inline noexcept-unevaluated 0x18cd800
+| | | `-CompoundStmt 0x18ce310 <col:8>
+| | `-CXXConstructorDecl 0x18ce170 <col:8> S_GeometryPolygons 'void (const struct geo_render::S_GeometryPolygons &)' inline noexcept-unevaluated 0x18ce170
+| |   `-ParmVarDecl 0x18ce2b0 <col:8> 'const struct geo_render::S_GeometryPolygons &'
+| |-CXXRecordDecl 0x18c5f90 <line:21:1, line:23:1> struct S_GeometryLines definition
+| | |-CXXRecordDecl 0x18c60a0 <line:21:1, col:8> struct S_GeometryLines
+| | |-CXXConstructorDecl 0x18ce3b0 <col:8> S_GeometryLines 'void (void)' inline noexcept-unevaluated 0x18ce3b0
+| | | `-CompoundStmt 0x18ce680 <col:8>
+| | `-CXXConstructorDecl 0x18ce4e0 <col:8> S_GeometryLines 'void (const struct geo_render::S_GeometryLines &)' inline noexcept-unevaluated 0x18ce4e0
+| |   `-ParmVarDecl 0x18ce620 <col:8> 'const struct geo_render::S_GeometryLines &'
+| |-CXXRecordDecl 0x18c6130 <line:25:1, line:33:1> struct S_Model definition invalid
+| | |-CXXRecordDecl 0x18c6240 <line:25:1, col:8> struct S_Model
+| | |-CXXConstructorDecl 0x18c6310 <line:26:5, col:13> S_Model 'void (void)'
+| | |-FieldDecl 0x18c63e0 <line:27:5, col:24> modelPolygons 'struct geo_render::S_GeometryPolygons'
+| | |-FieldDecl 0x18c6440 <line:28:5, col:21> modelLines 'struct geo_render::S_GeometryLines'
+| | |-FieldDecl 0x18c64d0 <line:29:5, col:12> shaderNameFill 'String':'int'
+| | |-FieldDecl 0x18c6530 <line:30:5, col:12> shaderNameLine 'String':'int'
+| | |-FieldDecl 0x18c6590 <line:31:5, col:12> layerId 'int' invalid
+| | |-FieldDecl 0x18c65f0 <line:32:5, col:9> zOrder 'int'
+| | |-CXXConstructorDecl 0x18cd4c0 <line:25:8> S_Model 'void (const struct geo_render::S_Model &)' inline noexcept-unevaluated 0x18cd4c0
+| | | `-ParmVarDecl 0x18cd600 <col:8> 'const struct geo_render::S_Model &'
+| | `-CXXDestructorDecl 0x18d2a40 <col:8> ~S_Model 'void (void)' inline noexcept-unevaluated 0x18d2a40
+| `-CXXRecordDecl 0x18c6640 <line:35:1, line:65:1> class C_RenderFactory definition
+|   |-CXXRecordDecl 0x18c6750 <line:35:1, col:7> class C_RenderFactory
+|   |-AccessSpecDecl 0x18c67e0 <line:36:1, col:7> public
+|   |-CXXConstructorDecl 0x18c6850 <line:37:5, col:21> C_RenderFactory 'void (void)'
+|   |-CXXDestructorDecl 0x18c6960 <line:38:5, col:22> ~C_RenderFactory 'void (void)'
+|   |-CXXMethodDecl 0x18c6aa0 <line:40:5, col:46> loadLayersSld '_Bool (const String &)'
+|   | `-ParmVarDecl 0x18c6a20 <col:24, col:38> fileName 'const String &'
+|   |-CXXMethodDecl 0x18c6be0 <line:41:5, col:46> loadShaders '_Bool (const String &)'
+|   | `-ParmVarDecl 0x18c6b60 <col:22, col:36> shadersDir 'const String &'
+|   |-CXXMethodDecl 0x18c6d10 <line:42:5, col:31> getErrorLog 'const String &(void)'
+|   |-CXXMethodDecl 0x18c6dd0 <line:43:5, col:24> clearErrorLog 'void (void)'
+|   |-CXXMethodDecl 0x18c6e90 <line:44:5, col:18> isReady '_Bool (void)'
+|   |-CXXMethodDecl 0x18c7070 <line:45:5, line:46:53> prepareModel 'const struct geo_render::S_Model *(const int)'
+|   | `-ParmVarDecl 0x18c6f40 <line:45:33, <invalid sloc>> 'const int' invalid invalid
+|   |-CXXMethodDecl 0x18c71f0 <line:47:5, col:43> releaseModel 'void (const struct geo_render::S_Model *)'
+|   | `-ParmVarDecl 0x18c7130 <col:23, col:38> model 'const struct geo_render::S_Model *'
+|   |-CXXMethodDecl 0x18c73a0 <line:48:5, col:44> setCamera 'void (const class geo_render::C_GLCamera &)'
+|   | `-ParmVarDecl 0x18c72e0 <col:20, col:38> camera 'const class geo_render::C_GLCamera &'
+|   |-CXXMethodDecl 0x18c80f0 <line:49:5, col:20> drawBegin 'void (void)'
+|   |-CXXMethodDecl 0x18c8260 <line:50:5, col:48> drawModelPolygons '_Bool (const struct geo_render::S_Model *)'
+|   | `-ParmVarDecl 0x18c81a0 <col:28, col:43> model 'const struct geo_render::S_Model *'
+|   |-CXXMethodDecl 0x18c83a0 <line:51:5, col:45> drawModelLines '_Bool (const struct geo_render::S_Model *)'
+|   | `-ParmVarDecl 0x18c8320 <col:25, col:40> model 'const struct geo_render::S_Model *'
+|   |-CXXMethodDecl 0x18c8520 <line:52:5, col:30> isLayerExists '_Bool (int)'
+|   | `-ParmVarDecl 0x18c8460 <col:24, col:28> id 'int'
+|   |-CXXMethodDecl 0x18c86a0 <line:53:5, col:38> getLayer 'const class geo_render::C_GeoLayer &(int)'
+|   | `-ParmVarDecl 0x18c85e0 <col:32, col:36> id 'int'
+|   |-CXXMethodDecl 0x18c8770 <line:54:5, col:25> clearLayersSld 'void (void)'
+|   |-CXXMethodDecl 0x18c8830 <line:55:5, col:28> getShadersCount 'int (void)' invalid
+|   |-CXXMethodDecl 0x18c88f0 <line:56:5, col:27> getLayersCount 'int (void)' invalid
+|   |-AccessSpecDecl 0x18c8990 <line:58:1, col:8> private
+|   |-FieldDecl 0x18c89d0 <line:59:5, col:21> geoLayers 'class geo_render::C_GeoLayersList'
+|   |-FieldDecl 0x18c8a30 <line:60:5, col:16> glRender 'class geo_render::C_GLRender'
+|   |-FieldDecl 0x18c8a90 <line:62:5, col:12> errorLog 'String':'int'
+|   |-FieldDecl 0x18c8af0 <line:63:5, col:16> camera 'class geo_render::C_GLCamera'
+|   |-FieldDecl 0x18c8b50 <line:64:5, col:16> modelInfo 'struct geo_render::S_DrawInfo'
+|   |-CXXConstructorDecl 0x18cee70 <line:35:7> C_RenderFactory 'void (const class geo_render::C_RenderFactory &)' inline noexcept-unevaluated 0x18cee70
+|   | `-ParmVarDecl 0x18cefb0 <col:7> 'const class geo_render::C_RenderFactory &'
+|   `-CXXMethodDecl 0x18d2da0 <col:7, <invalid sloc>> operator= 'class geo_render::C_RenderFactory &(const class geo_render::C_RenderFactory &)' inline noexcept-unevaluated 0x18d2da0
+|     `-ParmVarDecl 0x18d2ec0 <col:7> 'const class geo_render::C_RenderFactory &'
+|-NamespaceDecl 0x18c8ba0 prev 0x18c5d90 </home/caiiiycuk/emscripten-sdk/projects/rendering/librenderfactory/../librender/s_utils.hpp:7:1, line:22:1> geo_render
+| |-original Namespace 0x185e3d0 'geo_render'
+| |-FunctionDecl 0x18c8e20 <line:9:1, line:10:37> getLine 'String (const String &, const unsigned int, const unsigned int)'
+| | |-ParmVarDecl 0x18c8c10 <line:9:16, col:30> str 'const String &'
+| | |-ParmVarDecl 0x18c8c80 <col:35, col:54> string_len 'const unsigned int'
+| | `-ParmVarDecl 0x18c8cf0 <line:10:9, col:28> begin_pos 'const unsigned int'
+| |-FunctionDecl 0x18c9100 <line:11:1, col:56> getVar 'String (const String &, const unsigned int)'
+| | |-ParmVarDecl 0x18c8ef0 <col:15, col:29> str 'const String &'
+| | `-ParmVarDecl 0x18c8f60 <col:34, col:53> pos 'const unsigned int'
+| |-FunctionDecl 0x18c9280 <line:13:1, col:40> loadFile 'String (const String &)'
+| | `-ParmVarDecl 0x18c91c0 <col:17, col:31> file_name 'const String &'
+| |-FunctionDecl 0x18c93c0 <line:14:1, col:46> extractFileExt 'String (const String &)'
+| | `-ParmVarDecl 0x18c9340 <col:23, col:37> file_name 'const String &'
+| |-FunctionDecl 0x18c9500 <line:15:1, col:47> extractFileName 'String (const String &)'
+| | `-ParmVarDecl 0x18c9480 <col:24, col:38> file_name 'const String &'
+| |-FunctionDecl 0x18c9600 <line:16:1, col:29> getFileSeparator 'const char (void)'
+| |-FunctionDecl 0x18c97f0 <line:17:1, col:60> extractArgument 'String (const String &, unsigned int)'
+| | |-ParmVarDecl 0x18c96b0 <col:24, col:38> line 'const String &'
+| | `-ParmVarDecl 0x18c9720 <col:44, col:57> pos 'unsigned int'
+| |-FunctionDecl 0x18c9930 <line:18:1, col:37> trimString 'String (const String &)'
+| | `-ParmVarDecl 0x18c98b0 <col:19, col:33> text 'const String &'
+| |-FunctionDecl 0x18c9af0 <line:19:1, col:39> stringToFloat 'float (const String &)'
+| | `-ParmVarDecl 0x18c99f0 <col:21, col:35> text 'const String &'
+| `-FunctionDecl 0x18c9cb0 <line:20:1, col:33> floatToString 'String (float)'
+|   `-ParmVarDecl 0x18c9bb0 <col:22, col:28> value 'float'
+|-NamespaceDecl 0x18c9d60 prev 0x18c8ba0 </home/caiiiycuk/emscripten-sdk/projects/rendering/librenderfactory/../librender/s_glutils.hpp:8:1, line:21:1> geo_render
+| |-original Namespace 0x185e3d0 'geo_render'
+| |-FunctionDecl 0x18ca040 <line:10:1, line:11:33> bindUniformAuto 'void (const struct geo_render::S_DrawInfo *, const class geo_render::C_GLShader *, const unsigned int)'
+| | |-ParmVarDecl 0x18c9e00 <line:10:22, col:40> info 'const struct geo_render::S_DrawInfo *'
+| | |-ParmVarDecl 0x18c9ea0 <col:46, col:64> sh 'const class geo_render::C_GLShader *'
+| | `-ParmVarDecl 0x18c9f10 <line:11:9, col:28> index 'const unsigned int'
+| |-FunctionDecl 0x18ccbb0 <line:12:1, line:13:33> bindAttribAuto 'void (const struct geo_render::S_DrawData *, const class geo_render::C_GLShader *, const unsigned int)'
+| | |-ParmVarDecl 0x18cc9a0 <line:12:21, col:39> data 'const struct geo_render::S_DrawData *'
+| | |-ParmVarDecl 0x18cca10 <col:45, col:63> sh 'const class geo_render::C_GLShader *'
+| | `-ParmVarDecl 0x18cca80 <line:13:9, col:28> index 'const unsigned int'
+| |-FunctionDecl 0x18ccdf0 <line:14:1, line:15:33> unbindAttribAuto 'void (const struct geo_render::S_DrawData *, const class geo_render::C_GLShader *, const unsigned int)'
+| | |-ParmVarDecl 0x18ccc80 <line:14:23, col:41> data 'const struct geo_render::S_DrawData *'
+| | |-ParmVarDecl 0x18cccf0 <col:47, col:65> sh 'const class geo_render::C_GLShader *'
+| | `-ParmVarDecl 0x18ccd60 <line:15:9, col:28> index 'const unsigned int'
+| |-FunctionDecl 0x18cd0d0 <line:16:1, col:62> getNormal 'Vec3 (const Vec3 &, const Vec3 &, const Vec3 &)'
+| | |-ParmVarDecl 0x18ccec0 <col:16, col:28> p1 'const Vec3 &'
+| | |-ParmVarDecl 0x18ccf30 <col:32, col:44> p2 'const Vec3 &'
+| | `-ParmVarDecl 0x18ccfa0 <col:48, col:60> p3 'const Vec3 &'
+| `-FunctionDecl 0x18cd310 <line:17:1, col:72> getNormalizedNormal 'Vec3 (const Vec3 &, const Vec3 &, const Vec3 &)'
+|   |-ParmVarDecl 0x18cd1a0 <col:26, col:38> p1 'const Vec3 &'
+|   |-ParmVarDecl 0x18cd210 <col:42, col:54> p2 'const Vec3 &'
+|   `-ParmVarDecl 0x18cd280 <col:58, col:70> p3 'const Vec3 &'
+|-NamespaceDecl 0x18cd3d0 prev 0x18c9d60 </home/caiiiycuk/emscripten-sdk/projects/rendering/librenderfactory/renderfactory_lib.cpp:13:1, line:328:1> geo_render
+| |-original Namespace 0x185e3d0 'geo_render'
+| |-CXXConstructorDecl 0x18cd660 parent 0x18c6130 prev 0x18c6310 <line:15:1, line:17:1> S_Model 'void (void)'
+| | |-CXXCtorInitializer Field 0x18c63e0 'modelPolygons' 'struct geo_render::S_GeometryPolygons'
+| | | |-CXXConstructExpr 0x18ce328 <line:15:10> 'struct geo_render::S_GeometryPolygons' 'void (void)'
+| | |-CXXCtorInitializer Field 0x18c6440 'modelLines' 'struct geo_render::S_GeometryLines'
+| | | |-CXXConstructExpr 0x18ce698 <col:10> 'struct geo_render::S_GeometryLines' 'void (void)'
+| | |-CXXCtorInitializer Field 0x18c65f0 'zOrder' 'int'
+| | | |-IntegerLiteral 0x18cd758 <line:16:8> 'int' 0
+| | `-CompoundStmt 0x18ce710 <col:11, line:17:1>
+| |-NamespaceDecl 0x18ce730 <line:19:1, line:28:1>
+| | |-FunctionDecl 0x18ce970 <line:23:1, line:24:52> shaderExists '_Bool (const String &, const int)'
+| | | |-ParmVarDecl 0x18ce7f0 <line:23:19, col:33> file_name 'const String &'
+| | | `-ParmVarDecl 0x18ce860 <line:24:9, <invalid sloc>> 'const int' invalid invalid
+| | `-FunctionDecl 0x18ced20 <line:25:1, line:26:70> createShader 'class geo_render::C_GLShader (const String &, const String &, const String &, String &)'
+| |   |-ParmVarDecl 0x18cea30 <line:25:25, col:39> vertex_lines 'const String &'
+| |   |-ParmVarDecl 0x18ceaa0 <line:26:9, col:23> fragment_lines 'const String &'
+| |   |-ParmVarDecl 0x18ceb10 <col:39, col:53> name 'const String &'
+| |   `-ParmVarDecl 0x18cebe0 <col:59, col:67> log 'String &'
+| |-UsingDirectiveDecl 0x18ce790 <line:19:11, <invalid sloc>> Namespace 0x18ce730 ''
+| |-CXXConstructorDecl 0x18cf010 parent 0x18c6640 prev 0x18c6850 <line:30:1, line:31:1> C_RenderFactory 'void (void)'
+| | |-CXXCtorInitializer Field 0x18c89d0 'geoLayers' 'class geo_render::C_GeoLayersList'
+| | | |-CXXConstructExpr 0x18cf320 <line:30:18> 'class geo_render::C_GeoLayersList' 'void (void)'
+| | |-CXXCtorInitializer Field 0x18c8a30 'glRender' 'class geo_render::C_GLRender'
+| | | |-CXXConstructExpr 0x18cf550 <col:18> 'class geo_render::C_GLRender' 'void (void)'
+| | |-CXXCtorInitializer Field 0x18c8af0 'camera' 'class geo_render::C_GLCamera'
+| | | |-CXXConstructExpr 0x18cf710 <col:18> 'class geo_render::C_GLCamera' 'void (void)'
+| | |-CXXCtorInitializer Field 0x18c8b50 'modelInfo' 'struct geo_render::S_DrawInfo'
+| | | |-CXXConstructExpr 0x18cfa48 <col:18> 'struct geo_render::S_DrawInfo' 'void (void)'
+| | `-CompoundStmt 0x18cfac8 <col:36, line:31:1>
+| |-CXXDestructorDecl 0x18cfb30 parent 0x18c6640 prev 0x18c6960 <line:33:1, line:34:1> ~C_RenderFactory 'void (void)'
+| | `-CompoundStmt 0x18cfc18 <line:33:37, line:34:1>
+| |-CXXMethodDecl 0x18cfce0 parent 0x18c6640 prev 0x18c6aa0 <line:36:1, line:44:1> loadLayersSld '_Bool (const String &)'
+| | |-ParmVarDecl 0x18cfc60 <line:36:37, col:51> fileName 'const String &'
+| | `-CompoundStmt 0x18d0078 <col:61, line:44:1>
+| |   `-DeclStmt 0x18cfec8 <line:37:5, col:69>
+| |     `-VarDecl 0x18cfdd0 <col:5, col:28> status 'int' invalid
+| |-CXXMethodDecl 0x18d0190 parent 0x18c6640 prev 0x18c6be0 <line:46:1, line:80:1> loadShaders '_Bool (const String &)'
+| | |-ParmVarDecl 0x18d00d0 <line:46:35, col:49> shadersDir 'const String &'
+| | `-CompoundStmt 0x18d0ce0 <col:61, line:80:1>
+| |   |-DeclStmt 0x18d0368 <line:49:5, col:16>
+| |   | `-VarDecl 0x18d0310 <col:5, col:12> file 'String':'int'
+| |   |-DeclStmt 0x18d03e8 <line:50:5, col:20>
+| |   | `-VarDecl 0x18d0390 <col:5, col:12> file_ext 'String':'int'
+| |   |-DeclStmt 0x18d0480 <line:51:5, col:25>
+| |   | `-VarDecl 0x18d0410 <col:5, col:21> noErrors '_Bool'
+| |   |   `-CXXBoolLiteralExpr 0x18d0468 <col:21> '_Bool' true
+| |   |-ForStmt 0x18d0c40 <line:53:5, line:78:5>
+| |   | |-DeclStmt 0x18d0528 <line:53:10, col:22>
+| |   | | `-VarDecl 0x18d04b0 <col:10, col:17> i 'int' invalid
+| |   | |-<<<NULL>>>
+| |   | |-<<<NULL>>>
+| |   | |-<<<NULL>>>
+| |   | `-CompoundStmt 0x18d0c28 <col:52, line:78:5>
+| |   `-ReturnStmt 0x18d0cc0 <line:79:5, col:12>
+| |     `-ImplicitCastExpr 0x18d0ca8 <col:12> '_Bool' <LValueToRValue>
+| |       `-DeclRefExpr 0x18d0c80 <col:12> '_Bool' lvalue Var 0x18d0410 'noErrors' '_Bool'
+| |-CXXMethodDecl 0x18d0d50 parent 0x18c6640 prev 0x18c6d10 <line:82:1, line:84:1> getErrorLog 'const String &(void)'
+| | `-CompoundStmt 0x18d0eb8 <line:82:46, line:84:1>
+| |   `-ReturnStmt 0x18d0e98 <line:83:5, col:12>
+| |     `-ImplicitCastExpr 0x18d0e80 <col:12> 'const String':'const int' lvalue <NoOp>
+| |       `-MemberExpr 0x18d0e50 <col:12> 'String':'int' lvalue ->errorLog 0x18c8a90
+| |         `-CXXThisExpr 0x18d0e38 <col:12> 'class geo_render::C_RenderFactory *' this
+| |-CXXMethodDecl 0x18d0f20 parent 0x18c6640 prev 0x18c6dd0 <line:86:1, line:88:1> clearErrorLog 'void (void)'
+| | `-CompoundStmt 0x18d1040 <line:86:39, line:88:1>
+| |-CXXMethodDecl 0x18d10a0 parent 0x18c6640 prev 0x18c6e90 <line:90:1, line:93:1> isReady '_Bool (void)'
+| | `-CompoundStmt 0x18d1568 <line:90:33, line:93:1>
+| |-CXXMethodDecl 0x18d1620 parent 0x18c6640 <line:95:1, line:109:1> prepareModel 'const struct geo_render::S_Model *(const int)'
+| | |-ParmVarDecl 0x18d15a0 <line:96:9, <invalid sloc>> 'const int' invalid
+| | `-CompoundStmt 0x18d23f0 <line:97:51, line:109:1>
+| |   |-DeclStmt 0x18d1ef8 <line:98:5, col:35>
+| |   | `-VarDecl 0x18d1750 <col:5, col:34> model 'struct geo_render::S_Model *'
+| |   |   `-CXXNewExpr 0x18d1ea0 <col:22, col:34> 'struct geo_render::S_Model *'
+| |   |     `-CXXConstructExpr 0x18d1e70 <col:26, col:34> 'struct geo_render::S_Model' 'void (void)'
+| |   `-ReturnStmt 0x18d23d0 <line:108:5, col:12>
+| |     `-ImplicitCastExpr 0x18d23b8 <col:12> 'const struct geo_render::S_Model *' <NoOp>
+| |       `-ImplicitCastExpr 0x18d23a0 <col:12> 'struct geo_render::S_Model *' <LValueToRValue>
+| |         `-DeclRefExpr 0x18d2378 <col:12> 'struct geo_render::S_Model *' lvalue Var 0x18d1750 'model' 'struct geo_render::S_Model *' invalid
+| |-CXXMethodDecl 0x18d2900 parent 0x18c6640 prev 0x18c71f0 <line:111:1, line:113:1> releaseModel 'void (const struct geo_render::S_Model *)'
+| | |-ParmVarDecl 0x18d2450 <line:111:36, col:51> model 'const struct geo_render::S_Model *'
+| | `-CompoundStmt 0x18d2b50 <col:58, line:113:1>
+| |   `-CXXDeleteExpr 0x18d2b28 <line:112:5, col:12> 'void'
+| |     `-ImplicitCastExpr 0x18d2a08 <col:12> 'const struct geo_render::S_Model *' <LValueToRValue>
+| |       `-DeclRefExpr 0x18d29e0 <col:12> 'const struct geo_render::S_Model *' lvalue ParmVar 0x18d2450 'model' 'const struct geo_render::S_Model *'
+| |-CXXMethodDecl 0x18d2c20 parent 0x18c6640 prev 0x18c73a0 <line:115:1, line:117:1> setCamera 'void (const class geo_render::C_GLCamera &)'
+| | |-ParmVarDecl 0x18d2ba0 <line:115:33, col:51> camera 'const class geo_render::C_GLCamera &'
+| | `-CompoundStmt 0x18d4278 <col:59, line:117:1>
+| |   `-CXXOperatorCallExpr 0x18d4230 <line:116:5, col:20> 'class geo_render::C_GLCamera' lvalue
+| |     |-ImplicitCastExpr 0x18d4218 <col:18> 'class geo_render::C_GLCamera &(*)(const class geo_render::C_GLCamera &)' <FunctionToPointerDecay>
+| |     | `-DeclRefExpr 0x18d30f8 <col:18> 'class geo_render::C_GLCamera &(const class geo_render::C_GLCamera &)' lvalue CXXMethod 0x18d2f50 'operator=' 'class geo_render::C_GLCamera &(const class geo_render::C_GLCamera &) throw()'
+| |     |-MemberExpr 0x18d2d18 <col:5, col:11> 'class geo_render::C_GLCamera' lvalue ->camera 0x18c8af0
+| |     | `-CXXThisExpr 0x18d2d00 <col:5> 'class geo_render::C_RenderFactory *' this
+| |     `-DeclRefExpr 0x18d2d48 <col:20> 'const class geo_render::C_GLCamera' lvalue ParmVar 0x18d2ba0 'camera' 'const class geo_render::C_GLCamera &'
+| |-CXXMethodDecl 0x18d42e0 parent 0x18c6640 prev 0x18c80f0 <line:119:1, line:127:1> drawBegin 'void (void)'
+| | `-CompoundStmt 0x18d4e58 <line:119:35, line:127:1>
+| |   |-BinaryOperator 0x18d46b8 <line:121:5, col:61> 'Mat4':'int' lvalue '='
+| |   | |-MemberExpr 0x18d4588 <col:5, col:15> 'Mat4':'int' lvalue .projectionMatrix 0x18abfd0
+| |   | | `-MemberExpr 0x18d4558 <col:5> 'struct geo_render::S_DrawInfo' lvalue ->modelInfo 0x18c8b50
+| |   | |   `-CXXThisExpr 0x18d4540 <col:5> 'class geo_render::C_RenderFactory *' this
+| |   | `-ImplicitCastExpr 0x18d46a0 <col:34, col:61> 'Mat4':'int' <LValueToRValue>
+| |   |   `-CXXMemberCallExpr 0x18d4630 <col:34, col:61> 'const Mat4':'const int' lvalue
+| |   |     `-MemberExpr 0x18d4600 <col:34, col:41> '<bound member function type>' .getProjectionMatrix 0x18be360
+| |   |       `-ImplicitCastExpr 0x18d4688 <col:34> 'const class geo_render::C_GLCamera' lvalue <NoOp>
+| |   |         `-MemberExpr 0x18d45d0 <col:34> 'class geo_render::C_GLCamera' lvalue ->camera 0x18c8af0
+| |   |           `-CXXThisExpr 0x18d45b8 <col:34> 'class geo_render::C_RenderFactory *' this
+| |   |-BinaryOperator 0x18d4828 <line:122:5, col:49> 'Mat4':'int' lvalue '='
+| |   | |-MemberExpr 0x18d4728 <col:5, col:15> 'Mat4':'int' lvalue .viewMatrix 0x18ac030
+| |   | | `-MemberExpr 0x18d46f8 <col:5> 'struct geo_render::S_DrawInfo' lvalue ->modelInfo 0x18c8b50
+| |   | |   `-CXXThisExpr 0x18d46e0 <col:5> 'class geo_render::C_RenderFactory *' this
+| |   | `-ImplicitCastExpr 0x18d4810 <col:28, col:49> 'Mat4':'int' <LValueToRValue>
+| |   |   `-CXXMemberCallExpr 0x18d47d0 <col:28, col:49> 'const Mat4':'const int' lvalue
+| |   |     `-MemberExpr 0x18d47a0 <col:28, col:35> '<bound member function type>' .getViewMatrix 0x18be2a0
+| |   |       `-ImplicitCastExpr 0x18d47f8 <col:28> 'const class geo_render::C_GLCamera' lvalue <NoOp>
+| |   |         `-MemberExpr 0x18d4770 <col:28> 'class geo_render::C_GLCamera' lvalue ->camera 0x18c8af0
+| |   |           `-CXXThisExpr 0x18d4758 <col:28> 'class geo_render::C_RenderFactory *' this
+| |   |-BinaryOperator 0x18d4998 <line:123:5, col:61> 'Mat4':'int' lvalue '='
+| |   | |-MemberExpr 0x18d4898 <col:5, col:15> 'Mat4':'int' lvalue .viewProjectionMatrix 0x18ac090
+| |   | | `-MemberExpr 0x18d4868 <col:5> 'struct geo_render::S_DrawInfo' lvalue ->modelInfo 0x18c8b50
+| |   | |   `-CXXThisExpr 0x18d4850 <col:5> 'class geo_render::C_RenderFactory *' this
+| |   | `-ImplicitCastExpr 0x18d4980 <col:38, col:61> 'Mat4':'int' <LValueToRValue>
+| |   |   `-CXXMemberCallExpr 0x18d4940 <col:38, col:61> 'const Mat4':'const int' lvalue
+| |   |     `-MemberExpr 0x18d4910 <col:38, col:45> '<bound member function type>' .getCameraMatrix 0x18be420
+| |   |       `-ImplicitCastExpr 0x18d4968 <col:38> 'const class geo_render::C_GLCamera' lvalue <NoOp>
+| |   |         `-MemberExpr 0x18d48e0 <col:38> 'class geo_render::C_GLCamera' lvalue ->camera 0x18c8af0
+| |   |           `-CXXThisExpr 0x18d48c8 <col:38> 'class geo_render::C_RenderFactory *' this
+| |   |-BinaryOperator 0x18d4b08 <line:124:5, col:53> 'Mat3':'int' lvalue '='
+| |   | |-MemberExpr 0x18d4a08 <col:5, col:15> 'Mat3':'int' lvalue .normalMatrix 0x18ac110
+| |   | | `-MemberExpr 0x18d49d8 <col:5> 'struct geo_render::S_DrawInfo' lvalue ->modelInfo 0x18c8b50
+| |   | |   `-CXXThisExpr 0x18d49c0 <col:5> 'class geo_render::C_RenderFactory *' this
+| |   | `-ImplicitCastExpr 0x18d4af0 <col:30, col:53> 'Mat3':'int' <LValueToRValue>
+| |   |   `-CXXMemberCallExpr 0x18d4ab0 <col:30, col:53> 'const Mat3':'const int' lvalue
+| |   |     `-MemberExpr 0x18d4a80 <col:30, col:37> '<bound member function type>' .getNormalMatrix 0x18be540
+| |   |       `-ImplicitCastExpr 0x18d4ad8 <col:30> 'const class geo_render::C_GLCamera' lvalue <NoOp>
+| |   |         `-MemberExpr 0x18d4a50 <col:30> 'class geo_render::C_GLCamera' lvalue ->camera 0x18c8af0
+| |   |           `-CXXThisExpr 0x18d4a38 <col:30> 'class geo_render::C_RenderFactory *' this
+| |   |-BinaryOperator 0x18d4c78 <line:125:5, col:41> 'Vec3':'int' lvalue '='
+| |   | |-MemberExpr 0x18d4b78 <col:5, col:15> 'Vec3':'int' lvalue .cameraEye 0x18ac230
+| |   | | `-MemberExpr 0x18d4b48 <col:5> 'struct geo_render::S_DrawInfo' lvalue ->modelInfo 0x18c8b50
+| |   | |   `-CXXThisExpr 0x18d4b30 <col:5> 'class geo_render::C_RenderFactory *' this
+| |   | `-ImplicitCastExpr 0x18d4c60 <col:27, col:41> 'Vec3':'int' <LValueToRValue>
+| |   |   `-CXXMemberCallExpr 0x18d4c20 <col:27, col:41> 'const Vec3':'const int' lvalue
+| |   |     `-MemberExpr 0x18d4bf0 <col:27, col:34> '<bound member function type>' .getEye 0x18be000
+| |   |       `-ImplicitCastExpr 0x18d4c48 <col:27> 'const class geo_render::C_GLCamera' lvalue <NoOp>
+| |   |         `-MemberExpr 0x18d4bc0 <col:27> 'class geo_render::C_GLCamera' lvalue ->camera 0x18c8af0
+| |   |           `-CXXThisExpr 0x18d4ba8 <col:27> 'class geo_render::C_RenderFactory *' this
+| |   `-BinaryOperator 0x18d4e30 <line:126:5, col:47> 'Vec3':'int' lvalue '='
+| |     |-MemberExpr 0x18d4d30 <col:5, col:15> 'Vec3':'int' lvalue .cameraTarget 0x18ac1d0
+| |     | `-MemberExpr 0x18d4d00 <col:5> 'struct geo_render::S_DrawInfo' lvalue ->modelInfo 0x18c8b50
+| |     |   `-CXXThisExpr 0x18d4ca0 <col:5> 'class geo_render::C_RenderFactory *' this
+| |     `-ImplicitCastExpr 0x18d4e18 <col:30, col:47> 'Vec3':'int' <LValueToRValue>
+| |       `-CXXMemberCallExpr 0x18d4dd8 <col:30, col:47> 'const Vec3':'const int' lvalue
+| |         `-MemberExpr 0x18d4da8 <col:30, col:37> '<bound member function type>' .getTarget 0x18be0c0
+| |           `-ImplicitCastExpr 0x18d4e00 <col:30> 'const class geo_render::C_GLCamera' lvalue <NoOp>
+| |             `-MemberExpr 0x18d4d78 <col:30> 'class geo_render::C_GLCamera' lvalue ->camera 0x18c8af0
+| |               `-CXXThisExpr 0x18d4d60 <col:30> 'class geo_render::C_RenderFactory *' this
+| |-CXXMethodDecl 0x18d4f50 parent 0x18c6640 prev 0x18c8260 <line:129:1, line:190:1> drawModelPolygons '_Bool (const struct geo_render::S_Model *)'
+| | |-ParmVarDecl 0x18d4ed0 <line:129:41, col:56> model 'const struct geo_render::S_Model *'
+| | `-CompoundStmt 0x18d6b88 <col:63, line:190:1>
+| |   |-DeclStmt 0x18d50b0 <line:130:5, col:25>
+| |   | `-VarDecl 0x18d5040 <col:5, col:21> drawThis '_Bool'
+| |   |   `-CXXBoolLiteralExpr 0x18d5098 <col:21> '_Bool' true
+| |   |-DeclStmt 0x18d5150 <line:131:5, col:34>
+| |   | `-VarDecl 0x18d50e0 <col:5, col:29> disableDepthTest '_Bool'
+| |   |   `-CXXBoolLiteralExpr 0x18d5138 <col:29> '_Bool' false
+| |   |-DeclStmt 0x18d54a8 <line:133:5, col:24>
+| |   | `-VarDecl 0x18d5180 <col:5, col:16> drawData 'struct geo_render::S_DrawData'
+| |   |   `-CXXConstructExpr 0x18d5478 <col:16> 'struct geo_render::S_DrawData' 'void (void)'
+| |   |-IfStmt 0x18d6818 <line:178:5, line:180:5>
+| |   | |-<<<NULL>>>
+| |   | |-ImplicitCastExpr 0x18d6798 <line:178:9> '_Bool' <LValueToRValue>
+| |   | | `-DeclRefExpr 0x18d6770 <col:9> '_Bool' lvalue Var 0x18d50e0 'disableDepthTest' '_Bool'
+| |   | |-CompoundStmt 0x18d6800 <col:27, line:180:5>
+| |   | `-<<<NULL>>>
+| |   |-DeclStmt 0x18d6908 <line:182:5, col:35>
+| |   | `-VarDecl 0x18d6860 <col:5, col:12> gl_error 'int' invalid
+| |   `-ReturnStmt 0x18d6b68 <line:189:5, col:12>
+| |     `-ImplicitCastExpr 0x18d6b50 <col:12> '_Bool' <LValueToRValue>
+| |       `-DeclRefExpr 0x18d6b28 <col:12> '_Bool' lvalue Var 0x18d5040 'drawThis' '_Bool'
+| |-CXXMethodDecl 0x18d6d20 parent 0x18c6640 prev 0x18c83a0 <line:192:1, line:245:1> drawModelLines '_Bool (const struct geo_render::S_Model *)'
+| | |-ParmVarDecl 0x18d6c00 <line:192:38, col:53> model 'const struct geo_render::S_Model *'
+| | `-CompoundStmt 0x18d8200 <col:60, line:245:1>
+| |   |-DeclStmt 0x18d6e80 <line:193:5, col:25>
+| |   | `-VarDecl 0x18d6e10 <col:5, col:21> drawThis '_Bool'
+| |   |   `-CXXBoolLiteralExpr 0x18d6e68 <col:21> '_Bool' true
+| |   |-DeclStmt 0x18d6f20 <line:194:5, col:37>
+| |   | `-VarDecl 0x18d6eb0 <col:5, col:32> disableOpenGLStatus '_Bool'
+| |   |   `-CXXBoolLiteralExpr 0x18d6f08 <col:32> '_Bool' false
+| |   |-DeclStmt 0x18d6fd8 <line:196:5, col:24>
+| |   | `-VarDecl 0x18d6f50 <col:5, col:16> drawData 'struct geo_render::S_DrawData'
+| |   |   `-CXXConstructExpr 0x18d6fa8 <col:16> 'struct geo_render::S_DrawData' 'void (void)'
+| |   |-IfStmt 0x18d7f08 <line:233:5, line:235:5>
+| |   | |-<<<NULL>>>
+| |   | |-ImplicitCastExpr 0x18d7e88 <line:233:9> '_Bool' <LValueToRValue>
+| |   | | `-DeclRefExpr 0x18d7e60 <col:9> '_Bool' lvalue Var 0x18d6eb0 'disableOpenGLStatus' '_Bool'
+| |   | |-CompoundStmt 0x18d7ef0 <col:30, line:235:5>
+| |   | `-<<<NULL>>>
+| |   |-DeclStmt 0x18d7ff8 <line:237:5, col:35>
+| |   | `-VarDecl 0x18d7f50 <col:5, col:12> gl_error 'int' invalid
+| |   `-ReturnStmt 0x18d81e0 <line:244:5, col:12>
+| |     `-ImplicitCastExpr 0x18d81c8 <col:12> '_Bool' <LValueToRValue>
+| |       `-DeclRefExpr 0x18d81a0 <col:12> '_Bool' lvalue Var 0x18d6e10 'drawThis' '_Bool'
+| |-CXXMethodDecl 0x18d8300 parent 0x18c6640 prev 0x18c8520 <line:247:1, line:249:1> isLayerExists '_Bool (int)'
+| | |-ParmVarDecl 0x18d8280 <line:247:37, col:41> id 'int'
+| | `-CompoundStmt 0x18d8528 <col:45, line:249:1>
+| |   `-ReturnStmt 0x18d8508 <line:248:5, col:38>
+| |     `-CXXMemberCallExpr 0x18d8480 <col:12, col:38> '_Bool'
+| |       |-MemberExpr 0x18d8428 <col:12, col:22> '<bound member function type>' .isLayerExists 0x18c5bf0
+| |       | `-ImplicitCastExpr 0x18d84d8 <col:12> 'const class geo_render::C_GeoLayersList' lvalue <NoOp>
+| |       |   `-MemberExpr 0x18d83f8 <col:12> 'class geo_render::C_GeoLayersList' lvalue ->geoLayers 0x18c89d0
+| |       |     `-CXXThisExpr 0x18d83e0 <col:12> 'class geo_render::C_RenderFactory *' this
+| |       `-ImplicitCastExpr 0x18d84f0 <col:36> 'int' <LValueToRValue>
+| |         `-DeclRefExpr 0x18d8458 <col:36> 'int' lvalue ParmVar 0x18d8280 'id' 'int'
+| |-CXXMethodDecl 0x18d85e0 parent 0x18c6640 prev 0x18c86a0 <line:251:1, line:253:1> getLayer 'const class geo_render::C_GeoLayer &(int)'
+| | |-ParmVarDecl 0x18d8560 <line:251:45, col:49> id 'int'
+| | `-CompoundStmt 0x18d87f0 <col:53, line:253:1>
+| |   `-ReturnStmt 0x18d87d0 <line:252:5, col:33>
+| |     `-CXXMemberCallExpr 0x18d8770 <col:12, col:33> 'const class geo_render::C_GeoLayer' lvalue
+| |       |-MemberExpr 0x18d8718 <col:12, col:22> '<bound member function type>' .getLayer 0x18c5a70
+| |       | `-ImplicitCastExpr 0x18d87a0 <col:12> 'const class geo_render::C_GeoLayersList' lvalue <NoOp>
+| |       |   `-MemberExpr 0x18d86e8 <col:12> 'class geo_render::C_GeoLayersList' lvalue ->geoLayers 0x18c89d0
+| |       |     `-CXXThisExpr 0x18d86d0 <col:12> 'class geo_render::C_RenderFactory *' this
+| |       `-ImplicitCastExpr 0x18d87b8 <col:31> 'int' <LValueToRValue>
+| |         `-DeclRefExpr 0x18d8748 <col:31> 'int' lvalue ParmVar 0x18d8560 'id' 'int'
+| |-CXXMethodDecl 0x18d8850 parent 0x18c6640 prev 0x18c8770 <line:255:1, line:257:1> clearLayersSld 'void (void)'
+| | `-CompoundStmt 0x18d89f8 <line:255:40, line:257:1>
+| |   `-CXXMemberCallExpr 0x18d89a0 <line:256:5, col:21> 'void'
+| |     `-MemberExpr 0x18d8970 <col:5, col:15> '<bound member function type>' .clear 0x18c5710
+| |       `-MemberExpr 0x18d8940 <col:5> 'class geo_render::C_GeoLayersList' lvalue ->geoLayers 0x18c89d0
+| |         `-CXXThisExpr 0x18d8928 <col:5> 'class geo_render::C_RenderFactory *' this
+| |-CXXMethodDecl 0x18d8a40 parent 0x18c6640 <line:259:1, line:261:1> getShadersCount 'int (void)'
+| | `-CompoundStmt 0x18d8b28 <line:259:43, line:261:1> invalid
+| |-CXXMethodDecl 0x18d8b70 parent 0x18c6640 <line:263:1, line:265:1> getLayersCount 'int (void)'
+| | `-CompoundStmt 0x18d8ca0 <line:263:42, line:265:1> invalid
+| `-NamespaceDecl 0x18d8cc0 prev 0x18ce730 <line:267:1, line:326:1>
+|   |-original Namespace 0x18ce730 ''
+|   |-FunctionDecl 0x18d8e50 <line:286:1, line:296:1> shaderExists '_Bool (const String &, const int)'
+|   | |-ParmVarDecl 0x18d8d50 <line:286:19, col:33> file_name 'const String &'
+|   | |-ParmVarDecl 0x18d8dc0 <line:287:9, <invalid sloc>> 'const int' invalid
+|   | `-CompoundStmt 0x18d9328 <col:54, line:296:1>
+|   |   |-DeclStmt 0x18d9058 <line:288:5, col:48>
+|   |   | `-VarDecl 0x18d8f10 <col:5, col:47> file_ext 'String':'int'
+|   |   |   `-CallExpr 0x18d9028 <col:23, col:47> 'String':'int'
+|   |   |     |-ImplicitCastExpr 0x18d9010 <col:23> 'String (*)(const String &)' <FunctionToPointerDecay>
+|   |   |     | `-DeclRefExpr 0x18d8fe8 <col:23> 'String (const String &)' lvalue Function 0x18c93c0 'extractFileExt' 'String (const String &)'
+|   |   |     `-DeclRefExpr 0x18d8fc0 <col:38> 'const String':'const int' lvalue ParmVar 0x18d8d50 'file_name' 'const String &'
+|   |   |-DeclStmt 0x18d9118 <line:289:5, col:28>
+|   |   | `-VarDecl 0x18d9080 <col:5, col:19> file 'String':'int'
+|   |   |   `-ImplicitCastExpr 0x18d9100 <col:19> 'String':'int' <LValueToRValue>
+|   |   |     `-DeclRefExpr 0x18d90d8 <col:19> 'const String':'const int' lvalue ParmVar 0x18d8d50 'file_name' 'const String &'
+|   |   `-BinaryOperator 0x18d92d8 <line:293:5, col:32> 'String':'int' lvalue '='
+|   |     |-DeclRefExpr 0x18d91a8 <col:5> 'String':'int' lvalue Var 0x18d9080 'file' 'String':'int'
+|   |     `-CallExpr 0x18d9290 <col:12, col:32> 'String':'int'
+|   |       |-ImplicitCastExpr 0x18d9278 <col:12> 'String (*)(const String &)' <FunctionToPointerDecay>
+|   |       | `-DeclRefExpr 0x18d9250 <col:12> 'String (const String &)' lvalue Function 0x18c9500 'extractFileName' 'String (const String &)'
+|   |       `-ImplicitCastExpr 0x18d92c0 <col:28> 'const String':'const int' lvalue <NoOp>
+|   |         `-DeclRefExpr 0x18d9228 <col:28> 'String':'int' lvalue Var 0x18d9080 'file' 'String':'int' invalid
+|   `-FunctionDecl 0x18d9560 prev 0x18ced20 <line:298:1, line:324:1> createShader 'class geo_render::C_GLShader (const String &, const String &, const String &, String &)'
+|     |-ParmVarDecl 0x18d9370 <line:298:25, col:39> vertex_lines 'const String &'
+|     |-ParmVarDecl 0x18d93e0 <line:299:9, col:23> fragment_lines 'const String &'
+|     |-ParmVarDecl 0x18d9450 <col:39, col:53> name 'const String &'
+|     |-ParmVarDecl 0x18d94c0 <col:59, col:67> log 'String &'
+|     `-CompoundStmt 0x18da7b0 <col:72, line:324:1>
+|       |-DeclStmt 0x18d9860 <line:300:5, col:22>
+|       | `-VarDecl 0x18d9630 <col:5, col:16> shader 'class geo_render::C_GLShader' nrvo
+|       |   `-CXXConstructExpr 0x18d9830 <col:16> 'class geo_render::C_GLShader' 'void (void)'
+|       |-DeclStmt 0x18d9968 <line:301:5, line:304:37>
+|       | `-VarDecl 0x18d9890 <line:301:5, col:9> res 'int'
+|       |-IfStmt 0x18da0e0 <line:306:5, line:322:5>
+|       | |-<<<NULL>>>
+|       | |-BinaryOperator 0x18d9a48 <line:306:9, col:29> '_Bool' '=='
+|       | | |-ImplicitCastExpr 0x18d9a18 <col:9> 'int' <LValueToRValue>
+|       | | | `-DeclRefExpr 0x18d9980 <col:9> 'int' lvalue Var 0x18d9890 'res' 'int'
+|       | | `-ImplicitCastExpr 0x18d9a30 <col:16, col:29> 'int' <LValueToRValue>
+|       | |   `-DeclRefExpr 0x18d99e0 <col:16, col:29> 'const int' lvalue Var 0x18ac3b0 'SHADER_CREATE_OK' 'const int'
+|       | |-CompoundStmt 0x18d9b48 <col:47, line:308:5>
+|       | | `-CXXMemberCallExpr 0x18d9af0 <line:307:9, col:28> 'void'
+|       | |   |-MemberExpr 0x18d9a98 <col:9, col:16> '<bound member function type>' .setName 0x18b9560
+|       | |   | `-DeclRefExpr 0x18d9a70 <col:9> 'class geo_render::C_GLShader' lvalue Var 0x18d9630 'shader' 'class geo_render::C_GLShader'
+|       | |   `-DeclRefExpr 0x18d9ac8 <col:24> 'const String':'const int' lvalue ParmVar 0x18d9450 'name' 'const String &'
+|       | `-CompoundStmt 0x18da0c0 <line:308:12, line:322:5>
+|       |   `-DeclStmt 0x18d9bd8 <line:309:9, col:36>
+|       |     `-VarDecl 0x18d9b80 <col:9, col:27> logString 'int' invalid
+|       `-ReturnStmt 0x18da790 <line:323:5, col:12>
+|         `-CXXConstructExpr 0x18da758 <col:12> 'class geo_render::C_GLShader' 'void (const class geo_render::C_GLShader &) throw()' elidable
+|           `-ImplicitCastExpr 0x18da138 <col:12> 'const class geo_render::C_GLShader' lvalue <NoOp>
+|             `-DeclRefExpr 0x18da110 <col:12> 'class geo_render::C_GLShader' lvalue Var 0x18d9630 'shader' 'class geo_render::C_GLShader'
+|-FunctionDecl 0x18d1970 <<invalid sloc>> operator new 'void *(unsigned long) throw(class std::bad_alloc)'
+| |-ParmVarDecl 0x18d1a50 <<invalid sloc>> 'unsigned long'
+| `-MallocAttr 0x18d1a10 <<invalid sloc>> Implicit
+|-FunctionDecl 0x18d1ab0 <<invalid sloc>> operator new[] 'void *(unsigned long) throw(class std::bad_alloc)'
+| |-ParmVarDecl 0x18d1b90 <<invalid sloc>> 'unsigned long'
+| `-MallocAttr 0x18d1b50 <<invalid sloc>> Implicit
+|-FunctionDecl 0x18d1c70 <<invalid sloc>> operator delete 'void (void *) throw()'
+| `-ParmVarDecl 0x18d1d10 <<invalid sloc>> 'void *'
+`-FunctionDecl 0x18d1d70 <<invalid sloc>> operator delete[] 'void (void *) throw()'
+  `-ParmVarDecl 0x18d1e10 <<invalid sloc>> 'void *'
