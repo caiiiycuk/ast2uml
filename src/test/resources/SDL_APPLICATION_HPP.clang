@@ -1,0 +1,44 @@
+TranslationUnitDecl 0x30c7a20 <<invalid sloc>>
+|-TypedefDecl 0x30c7f60 <<invalid sloc>> __int128_t '__int128'
+|-TypedefDecl 0x30c7fc0 <<invalid sloc>> __uint128_t 'unsigned __int128'
+|-TypedefDecl 0x30c8380 <<invalid sloc>> __builtin_va_list '__va_list_tag [1]'
+|-NamespaceDecl 0x30c83d0 </home/caiiiycuk/emscripten-sdk/projects/rendering/libsdlcontext/./sdl_event.hpp:7:1, line:22:1> geo_render
+| `-CXXRecordDecl 0x30c8430 <line:9:1, line:20:1> class C_SDLEvent definition
+|   |-CXXRecordDecl 0x30c8540 <line:9:1, col:7> class C_SDLEvent
+|   |-AccessSpecDecl 0x30c85d0 <line:10:1, col:7> public
+|   |-CXXConstructorDecl 0x30c8670 <line:11:5, col:16> C_SDLEvent 'void (void)'
+|   |-CXXDestructorDecl 0x3118470 <line:12:5, col:25> ~C_SDLEvent 'void (void)' virtual
+|   |-CXXMethodDecl 0x3118680 <line:13:5, col:48> onEvent 'void (const class geo_render::C_SDLEvent *)' virtual
+|   | `-ParmVarDecl 0x31185c0 <col:26, col:43> event 'const class geo_render::C_SDLEvent *'
+|   |-CXXMethodDecl 0x3118750 <line:14:5, col:29> onMinimize 'void (void)' virtual
+|   |-CXXMethodDecl 0x3118810 <line:15:5, col:28> onRestore 'void (void)' virtual
+|   |-CXXMethodDecl 0x3118a00 <line:16:5, col:39> onResize 'void (int, int)' virtual
+|   | |-ParmVarDecl 0x31188c0 <col:27, col:31> w 'int'
+|   | `-ParmVarDecl 0x3118930 <col:34, col:38> h 'int'
+|   |-CXXMethodDecl 0x3118ad0 <line:17:5, col:27> onExpose 'void (void)' virtual
+|   |-CXXMethodDecl 0x3118b90 <line:18:5, col:25> onExit 'void (void)' virtual
+|   |-CXXMethodDecl 0x3118e80 <line:19:5, col:71> onUser 'void (int, int, void *, void *)' virtual
+|   | |-ParmVarDecl 0x3118c40 <col:25, col:31> type 'int' invalid
+|   | |-ParmVarDecl 0x3118cb0 <col:37, col:41> code 'int'
+|   | |-ParmVarDecl 0x3118d20 <col:47, col:53> data1 'void *'
+|   | `-ParmVarDecl 0x3118d90 <col:60, col:66> data2 'void *' invalid
+|   `-CXXMethodDecl 0x3118fa0 <line:9:7, <invalid sloc>> operator= 'class geo_render::C_SDLEvent &(const class geo_render::C_SDLEvent &)' inline noexcept-unevaluated 0x3118fa0
+|     `-ParmVarDecl 0x31190c0 <col:7> 'const class geo_render::C_SDLEvent &'
+`-NamespaceDecl 0x3119120 prev 0x30c83d0 </home/caiiiycuk/emscripten-sdk/projects/rendering/libsdlcontext/sdl_application.hpp:7:1, line:23:1> geo_render
+  |-original Namespace 0x30c83d0 'geo_render'
+  `-CXXRecordDecl 0x3119180 <line:9:1, line:21:1> class C_SDLApplication definition
+    |-public 'class geo_render::C_SDLEvent'
+    |-CXXRecordDecl 0x31192d0 <line:9:1, col:7> class C_SDLApplication
+    |-AccessSpecDecl 0x3119360 <line:10:1, col:7> public
+    |-CXXConstructorDecl 0x3119850 <line:11:5, col:22> C_SDLApplication 'void (void)'
+    |-CXXDestructorDecl 0x3119960 <line:12:5, col:31> ~C_SDLApplication 'void (void)' virtual
+    |-CXXMethodDecl 0x3119b10 <line:14:5, col:48> onEvent 'void (const int *)' virtual
+    | `-ParmVarDecl 0x3119a50 <col:26, col:43> event 'const int *' invalid invalid
+    |-CXXMethodDecl 0x3119be0 <line:15:5, col:25> onExit 'void (void)' virtual
+    |-CXXMethodDecl 0x3119d50 <line:16:5, col:45> setTerminate 'void (_Bool)' virtual
+    | `-ParmVarDecl 0x3119c90 <col:31, col:36> terminate '_Bool'
+    |-CXXMethodDecl 0x3119e50 <line:17:5, col:32> isTerminate '_Bool (void) const' virtual
+    |-AccessSpecDecl 0x3119ef0 <line:19:1, col:8> private
+    |-FieldDecl 0x3119f30 <line:20:5, col:10> terminate '_Bool'
+    `-CXXMethodDecl 0x3119fe0 <line:9:7, <invalid sloc>> operator= 'class geo_render::C_SDLApplication &(const class geo_render::C_SDLApplication &)' inline noexcept-unevaluated 0x3119fe0
+      `-ParmVarDecl 0x311a100 <col:7> 'const class geo_render::C_SDLApplication &'
