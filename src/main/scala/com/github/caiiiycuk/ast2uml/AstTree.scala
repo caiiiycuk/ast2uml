@@ -1,10 +1,17 @@
 package com.github.caiiiycuk.ast2uml
 
-abstract class Ast(name: String, childs: Seq[Ast]) {
+abstract class AstNodeSpec
+case class AstAccessSpec(level: String) extends AstNodeSpec
+
+case class AstNode(name: String, specs: Seq[AstNodeSpec]) {
+  override def toString = name
+}
+
+abstract class Ast(node: AstNode, childs: Seq[Ast]) {
 
   def astChilds = childs
 
-  def astName = name
+  def astName = node.name
 
   protected def toString(paddingChar: Char = '~', padding: String = ""): String = {
     val childString = childs.map(_.toString(paddingChar, padding + paddingChar)).mkString
@@ -16,23 +23,38 @@ abstract class Ast(name: String, childs: Seq[Ast]) {
   override def toString() = toString('~')
 }
 
-case class AstRoot(childs: List[Ast]) extends Ast(".", childs)
+case class AstRoot(childs: List[Ast]) extends Ast(AstNode(".", Seq()), childs)
 
-case class AstNamespace(name: String, childs: List[Ast]) extends Ast(name, childs)
+case class AstNamespace(node: AstNode, childs: List[Ast]) extends Ast(node, childs)
 
-abstract class AstRecord(name: String, childs: List[Ast]) extends Ast(name, childs) {
-  def toStruct = AstClass(name, childs)
-  def toClass = AstClass(name, childs)
+abstract class AstRecord(node: AstNode, childs: List[Ast]) extends Ast(node, childs) {
+  def toStruct = AstClass(node, childs)
+  def toClass = AstClass(node, childs)
 }
 
-case class AstClass(name: String, childs: List[Ast]) extends AstRecord(name, childs)
-case class AstStruct(name: String, childs: List[Ast]) extends AstRecord(name, childs)
-case class AstUnknown(name: String, childs: List[Ast]) extends Ast(name, childs)
+case class AstClass(node: AstNode, childs: List[Ast]) extends AstRecord(node, childs)
+case class AstStruct(node: AstNode, childs: List[Ast]) extends AstRecord(node, childs)
+case class AstUnknown(node: AstNode, childs: List[Ast]) extends Ast(node, childs)
 
-case class AstField(name: String, `type`: Option[String], childs: List[Ast]) extends Ast(name, childs) {
-  override def astName = s"${`type`.getOrElse("???")} ${name}"
+case class AstField(node: AstNode, `type`: Option[String], childs: List[Ast]) extends Ast(node, childs) {
+  override def astName = node.specs.headOption match {
+    case Some(AstAccessSpec("public")) =>
+      s"+${`type`.getOrElse("???")} ${node}"
+    case Some(AstAccessSpec("protected")) =>
+      s"#${`type`.getOrElse("???")} ${node}"
+    case _ =>
+      s"-${`type`.getOrElse("???")} ${node}"
+  }
+
 }
 
-case class AstMethod(name: String, signature: Option[String], childs: List[Ast]) extends Ast(name, childs) {
-  override def astName = s"${name}(${signature.getOrElse("???")})"
+case class AstMethod(node: AstNode, signature: Option[String], childs: List[Ast]) extends Ast(node, childs) {
+  override def astName = node.specs.headOption match {
+    case Some(AstAccessSpec("public")) =>
+      s"+${node}(${signature.getOrElse("???")})"
+    case Some(AstAccessSpec("protected")) =>
+      s"#${node}(${signature.getOrElse("???")})"
+    case _ =>
+      s"-${node}(${signature.getOrElse("???")})"
+  }
 }

@@ -10,7 +10,7 @@ class QueryTest extends FlatSpec with Matchers {
   behavior of "Query"
 
   it should "Query class" in {
-    implicit val root = AstRoot(List(AstNamespace("namespace1", List(AstClass("class1", List())))))
+    implicit val root = AstRoot(List(AstNamespace(AstNode("namespace1", Seq()), List(AstClass(AstNode("class1", Seq()), List())))))
 
     val paths = AstQuery.findAll(classOf[AstClass])
     val nodes = paths.map(p => p.map(_.astName))
@@ -21,8 +21,8 @@ class QueryTest extends FlatSpec with Matchers {
 
   it should "Query all classes" in {
     implicit val root = AstRoot(List(
-      AstNamespace("namespace1", List(AstClass("class1", List()))),
-      AstNamespace("namespace2", List(AstNamespace("nested", List(AstClass("class2", List())))))))
+      AstNamespace(AstNode("namespace1", Seq()), List(AstClass(AstNode("class1", Seq()), List()))),
+      AstNamespace(AstNode("namespace2", Seq()), List(AstNamespace(AstNode("nested", Seq()), List(AstClass(AstNode("class2", Seq()), List())))))))
 
     val paths = AstQuery.findAll(classOf[AstClass])
     val nodes = paths.map(p => p.map(_.astName))

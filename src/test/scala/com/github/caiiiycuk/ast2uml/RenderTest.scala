@@ -12,6 +12,7 @@ class RenderTest extends FlatSpec with Matchers {
 
   it should "render uml classes" in {
     implicit val ast = ClangAstParser(ClangOutput.GEO_LAYER_LIB_CPP)
+//    println(PlantUml.renderUml)
   }
 
 }
